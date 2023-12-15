@@ -62,6 +62,14 @@ strong {
   font-family: var(--font-2-regular);
 }
 
+.font-2-medium {
+  font-family: var(--font-2-medium);
+}
+
+.font-2-semibold {
+  font-family: var(--font-2-semibold);
+}
+
 .font-2-bold {
   font-family: var(--font-2-bold);
 }
@@ -86,7 +94,7 @@ rub,
 
 .heading {
   font-size: 2em;
-  font-family: var(--font-2-regular);
+  font-family: var(--font-2-medium);
 
   @media(--md) {
     font-size: 3em;

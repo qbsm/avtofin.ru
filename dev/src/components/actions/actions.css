@@ -16,7 +16,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2rem;
-    padding: 2rem;
+    padding: 4rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,7 +29,7 @@
 }
 
 .actions .card__title {
-    font-size: 2em;
+    font-size: 1.6em;
 }
 
 .actions .card__subtitle {

@@ -7,8 +7,11 @@
         <div class="section__item cards-wrap">
             {% for item in data.items %}
             <div class="card" style="background-image: url({{item.bg}});">
-                <span class="card__title font-2-regular" >{{ item.title}}</span>
-                <span class="card__subtitle font-2-regular" >{{ item.subtitle}}</span>
+                <span class="card__title font-2-medium" >{{ item.title | raw }}</span>
+                {% if item.subtitle %}
+                <span class="card__subtitle font-2-regular" >{{ item.subtitle | raw }}</span>
+                {% endif %}
+                <button class="button button-3 button-md button-rounded">{{ item.button | raw }}</button>
             </div>
             {% endfor %}
         </div>
