@@ -2,6 +2,7 @@
 }
 
 .section__item.cards-wrap {
+    width: 100%;
 }
 
 .reviews .card {
