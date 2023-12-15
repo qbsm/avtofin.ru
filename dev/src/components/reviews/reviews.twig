@@ -1,4 +1,5 @@
 <section class="reviews section">
+    {% set months = ['нулября', 'января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'] %}
     <div class="container">
         <div class="section__item heading-wrap">
             <span class="heading text-center">{{ data.heading | raw }}</span>
@@ -31,18 +32,19 @@
                                 <span class="mdi mdi-star"></span>
                             </div>
                             <div class="card__item date-wrap">
-                                <span class="card__date">22 ноября</span>
+                                {% set dat = "now" |date_modify("-"~item.days~" day") %}
+                                <span class="card__date">{{ dat | date('d') }} {{ months[dat|date('m')] }}</span>
                             </div>
                             <div class="card__item desc-wrap">
                                 <span class="card__desc">{{ item.desc | raw }}
                             </div>
                             <div class="card__item likes-wrap">
                                 <div class="card__subitem like-wrap">
-                                    <span class="mdi mdi-thumb-up card__like-icon"></span>
-                                    <span class="card__like-num font-2-regular">1</span>
+                                    <span class="mdi mdi-thumb-up card__like-icon js-thumb-up"></span>
+                                    <span class="card__like-num font-2-regular js-likes-count">{{ item.likes }}</span>
                                 </div>
                                 <div class="card__subitem like-wrap">
-                                    <span class="mdi mdi-thumb-down card__like-icon"></span>
+                                    <span class="mdi mdi-thumb-down card__like-icon js-thumb-down"></span>
                                     <span class="card__like-num"></span>
                                 </div>
                             </div>

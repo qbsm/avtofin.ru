@@ -1,5 +1,5 @@
 export default () => {
-    
+
     $(document).ready(() => {
 
         new Swiper('#reviews-swiper', {
@@ -26,5 +26,27 @@ export default () => {
                 prevEl: '.swiper-button-prev',
             }
         });
+
+        $('.js-thumb-up').on('click', function() {
+            if (!$(this).hasClass('active')) {
+                const cnt = $(this).parent().parent().find('.js-likes-count:first');
+                const val = Number(cnt.html());
+                cnt.html(val+1);
+                $(this).addClass('active')
+                $(this).parent().parent().find('.js-thumb-down').removeClass('active');
+            }
+            return false;
+        });
+        $('.js-thumb-down').on('click', function(e) {
+            if (!$(this).hasClass('active')) {
+                const cnt = $(this).parent().parent().find('.js-likes-count:first');
+                const val = Number(cnt.html());
+                cnt.html(val-1);
+                $(this).addClass('active')
+                $(this).parent().parent().find('.js-thumb-up').removeClass('active');
+            }
+            return false;
+        });
+
     });
 }
