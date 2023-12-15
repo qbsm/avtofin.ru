@@ -1,4 +1,5 @@
 <section class="reviews section">
+    {% set months = ['нулября', 'января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'] %}
     <div class="container">
         <div class="section__item heading-wrap">
             <span class="heading text-center">{{ data.heading | raw }}</span>
@@ -31,7 +32,8 @@
                                 <span class="mdi mdi-star"></span>
                             </div>
                             <div class="card__item date-wrap">
-                                <span class="card__date">22 ноября</span>
+                                {% set dat = "now" |date_modify("-"~item.days~" day") %}
+                                <span class="card__date">{{ dat | date('d') }} {{ months[dat|date('m')] }}</span>
                             </div>
                             <div class="card__item desc-wrap">
                                 <span class="card__desc">{{ item.desc | raw }}
