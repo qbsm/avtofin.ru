@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'JaguarCyrillicWeb-Regular';
+  src:
+    url('https://static.ismart.pro/fonts/jaguar-cyrillicweb/jaguar-regular_cyrillic_web.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JaguarCyrillicWeb-Bold';
+  src:
+    url('https://static.ismart.pro/fonts/jaguar-cyrillicweb/jaguar-bold_cyrillic_web.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

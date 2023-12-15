@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'KIA-Bold';
+    src: url('https://static.ismart.pro/fonts/kia/kia_bold.woff2') format('woff2'),
+         url('https://static.ismart.pro/fonts/kia/kia_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'KIA-Light';
+    src: url('https://static.ismart.pro/fonts/kia/kia_light.woff2') format('woff2'),
+         url('https://static.ismart.pro/fonts/kia/kia_light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'KIA-Medium';
+    src: url('https://static.ismart.pro/fonts/kia/kia_medium.woff2') format('woff2'),
+         url('https://static.ismart.pro/fonts/kia/kia_medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

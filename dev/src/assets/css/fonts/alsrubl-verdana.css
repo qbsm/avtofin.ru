@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'ALSRubl-Verdana';
+  src:
+    url('https://static.ismart.pro/fonts/alsrubl/alsrubl-verdana-regular.woff') format('woff'),
+    url('https://static.ismart.pro/fonts/alsrubl/alsrubl-verdana-regular.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}

@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Etelka-Light';
+  src:
+    url('https://static.ismart.pro/fonts/etelka/etelkalight.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/etelka/etelkalight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Etelka-TextBold';
+  src:
+    url('https://static.ismart.pro/fonts/etelka/etelkatext-bold.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/etelka/etelkatext-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Etelka-Text';
+  src:
+    url('https://static.ismart.pro/fonts/etelka/etelkatext.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/etelka/etelkatext.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

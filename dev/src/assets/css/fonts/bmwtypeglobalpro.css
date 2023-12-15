@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'BMWTypeGlobalPro-Regular';
+  src:
+    url('https://static.ismart.pro/fonts/bwwtypeglobalpro/bmwtypeglobalpro-regular.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/bwwtypeglobalpro/bmwtypeglobalpro-regular.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BMWTypeGlobalPro-Bold';
+  src:
+    url('https://static.ismart.pro/fonts/bwwtypeglobalpro/bmwtypeglobalpro-bold.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/bwwtypeglobalpro/bmwtypeglobalpro-bold.woff') format('woff');
+  font-style: normal;
+}

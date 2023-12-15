@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'MazdaCyrillic-Regular';
+  src:
+    url('https://static.ismart.pro/fonts/mazdacyrillic/MazdaCyrillicRegular.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/mazdacyrillic/MazdaCyrillicRegular.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}

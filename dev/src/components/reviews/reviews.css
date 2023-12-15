@@ -1,0 +1,80 @@
+.reviews {
+}
+
+.section__item.cards-wrap {
+}
+
+.reviews .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: flex-start;
+    gap: .5rem;
+    padding: 2rem;
+    /*border: 1px solid hsla(0, 0%, 7%, .2);*/
+    border-radius: 1rem;
+    box-shadow: var(--shadow-3);
+}
+
+.reviews .card__item.client-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reviews .card__subitem.avatar-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.reviews .card__letter {
+    font-size: 1.2em;
+    color: var(--color-1);
+}
+
+.reviews .card__item.rating-wrap {
+    color: var(--color-4);
+}
+
+.reviews .card__item.rating-wrap span {
+    font-size: 1.2em;
+}
+
+.reviews .card__item.date-wrap span {
+    opacity: .6;
+}
+
+.reviews .card__item.likes-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reviews .card__like-icon {
+    font-size: 1.2em;
+    color: #999;
+    cursor: pointer;
+}
+
+.reviews .card__like-icon:hover {
+    color: #555;
+}
+
+.reviews .card__like-num {
+}
+
+.reviews .swiper-button-prev,
+.reviews .swiper-button-next {
+    color: var(--color-3);
+}
+
+.reviews .swiper-pagination-bullet-active {
+    background: var(--color-3);
+}

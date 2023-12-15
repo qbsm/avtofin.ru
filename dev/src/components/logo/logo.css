@@ -1,0 +1,44 @@
+.logo__img {
+  transition: all ease-out var(--duration-1);
+}
+
+.logo_brand .logo__img {
+  width: 60px;
+
+  @media (--md) {
+    width: 80px;
+  }
+}
+
+.js-header_sticky .logo_brand .logo__img {
+  @media (--md) {
+    width: 60px;
+  }
+}
+
+.logo_dealer-header .logo__img {
+  width: 140px;
+
+  @media (--md) {
+    width: 170px;
+  }
+}
+
+.js-header_sticky .logo_dealer-header .logo__img {
+  @media (--md) {
+    width: 140px;
+  }
+}
+
+.logo_dealer .logo__img {
+  display: none;
+
+  @media (--md) {
+    display: block;
+    width: 240px;
+  }
+}
+
+.logo_dealer {
+  display: inline-block;
+}

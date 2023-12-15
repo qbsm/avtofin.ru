@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'BMWTypeWeb-Bold';
+  src:
+    url('https://static.ismart.pro/fonts/bmwtypeweb/bmwtypbo.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/bmwtypeweb/bmwtypbo.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BMWTypeWeb-Light';
+  src:
+    url('https://static.ismart.pro/fonts/bmwtypeweb/bmwtypli.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/bmwtypeweb/bmwtypli.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BMWTypeWeb-Thin';
+  src:
+    url('https://static.ismart.pro/fonts/bmwtypeweb/bmwtypth.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/bmwtypeweb/bmwtypth.woff') format('woff');
+  font-style: normal;
+}

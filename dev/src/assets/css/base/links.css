@@ -1,0 +1,62 @@
+/* Links */
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  background-size: 100% 1px;
+  background-position: 0 1.05em;
+  background-repeat: no-repeat;
+  border: none;
+  padding: 0 0 .1em;
+  display: inline-block;
+}
+
+.link:hover {
+  background-image: none;
+}
+
+.link-1 {
+  background-image: linear-gradient(var(--color-1), var(--color-1));
+}
+
+.link-2 {
+  background-image: linear-gradient(var(--color-2), var(--color-2));
+}
+
+.link-3 {
+  background-image: linear-gradient(var(--color-3), var(--color-3));
+}
+
+.link-dashed-1 {
+  background-image: linear-gradient(90deg, var(--color-1) 66%, transparent 0);
+  background-repeat: repeat-x;
+  background-size: .4em 1px;
+}
+
+.link-dashed-1:hover {
+  background-image: linear-gradient(var(--color-1), var(--color-1));
+  background-size: 100% 1px;
+}
+
+.link-dashed-2 {
+  background-image: linear-gradient(90deg, var(--color-2) 66%, transparent 0);
+  background-repeat: repeat-x;
+  background-size: .4em 1px;
+}
+
+.link-dashed-2:hover {
+  background-image: linear-gradient(var(--color-2), var(--color-2));
+  background-size: 100% 1px;
+}
+
+.link-dashed-3 {
+  background-image: linear-gradient(90deg, var(--color-3) 66%, transparent 0);
+  background-repeat: repeat-x;
+  background-size: .4em 1px;
+}
+
+.link-dashed-3:hover {
+  background-image: linear-gradient(var(--color-3), var(--color-3));
+  background-size: 100% 1px;
+}

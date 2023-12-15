@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'GothamPro-Light';
+  src:
+    url('https://static.ismart.pro/fonts/gotham/GothamPro-Light.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/gotham/GothamPro-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GothamPro-Regular';
+  src:
+    url('https://static.ismart.pro/fonts/gotham/GothamPro.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/gotham/GothamPro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GothamPro-Bold';
+  src:
+    url('https://static.ismart.pro/fonts/gotham/GothamPro-Bold.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/gotham/GothamPro-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

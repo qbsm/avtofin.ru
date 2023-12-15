@@ -1,0 +1,25 @@
+@import "../../assets/css/base/variables.css";
+@import "../../assets/brands/$brand/variables.css";
+@import "../../assets/brands/$brand/fonts.css";
+@import "../../assets/css/base/media-queries.css";
+@import "../../assets/css/base/grid.css";
+@import "../../assets/css/base/typography.css";
+@import "../../assets/css/base/animations.css";
+@import "../../assets/css/base/helpers.css";
+@import "../../assets/css/base/general.css";
+@import "../../assets/css/base/buttons";
+@import "../../assets/css/base/links";
+@import "../../assets/css/base/sections.css";
+@import "../../components/form/form.css";
+<%import%>
+
+
+.secondary-screen {
+  opacity: 0;
+  transition: all ease-out .3s;
+  background-image: url(../image/1.jpg);
+}
+
+.modal {
+  display: none;
+}

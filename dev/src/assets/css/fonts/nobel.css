@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Nobel-Bold';
+    src: url('https://static.ismart.pro/fonts/nobel/Nobel-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nobel-Light';
+    src: url('https://static.ismart.pro/fonts/nobel/Nobel-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nobel-Regular';
+    src: url('https://static.ismart.pro/fonts/nobel/Nobel-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

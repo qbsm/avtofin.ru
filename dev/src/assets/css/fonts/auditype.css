@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'AudiType-ExtendedBold';
+  src:
+    url('https://static.ismart.pro/fonts/auditype/AudiType-ExtendedBold (1).woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/auditype/AudiType-ExtendedBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'AudiType-Normal';
+  src:
+    url('https://static.ismart.pro/fonts/auditype/AudiType-Normal.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/auditype/AudiType-Normal.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+

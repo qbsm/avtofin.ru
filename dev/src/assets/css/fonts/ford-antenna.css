@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'FordAntenna-Cond';
+  src:
+    url('https://static.ismart.pro/fonts/ford-antenna/ford-antenna-cond.woff') format('woff'),
+    url('https://static.ismart.pro/fonts/ford-antenna/ford-antenna-cond.ttf') format('truetype');
+  font-style: normal;
+}
+
+/*@font-face {
+  font-family: 'FordAntenna-CondRegular';
+  src:
+    url('https://static.ismart.pro/fonts/ford-antenna/ford-antenna-cond-regular.woff') format('woff'),
+    url('https://static.ismart.pro/fonts/ford-antenna/ford-antenna-cond-regular.ttf') format('truetype');
+  font-style: normal;
+}*/
+
+/*@font-face {
+  font-family: 'FordAntenna-CondMedium';
+  src:
+    url('https://static.ismart.pro/fonts/ford-antenna/ford-antenna-cond-medium.woff') format('woff'),
+    url('https://static.ismart.pro/fonts/ford-antenna/ford-antenna-cond-medium.ttf') format('truetype');
+  font-style: normal;
+}*/
+
+@font-face {
+  font-family: 'FordAntenna-CondBold';
+  src:
+    url('https://static.ismart.pro/fonts/ford-antenna/ford-antenna-cond-bold.woff') format('woff'),
+    url('https://static.ismart.pro/fonts/ford-antenna/ford-antenna-cond-bold.ttf') format('truetype');
+  font-style: normal;
+}
+
+/*@font-face {
+  font-family: 'FordAntenna-Bold';
+  src:
+    url('https://static.ismart.pro/fonts/ford-antenna/ford-antenna-bold.woff') format('woff'),
+    url('https://static.ismart.pro/fonts/ford-antenna/ford-antenna-bold.ttf') format('truetype');
+  font-style: normal;
+}*/
+

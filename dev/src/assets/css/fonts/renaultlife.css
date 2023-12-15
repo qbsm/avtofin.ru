@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Renaultlife-Regular';
+  src:
+    url('https://static.ismart.pro/fonts/renaultlife/renaultlife-regular.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/renaultlife/renaultlife-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*@font-face {
+  font-family: 'Renaultlife-CondBold';
+  src:
+    url('https://static.ismart.pro/fonts/renaultlife/renaultlife-condbold.woff') format('woff'),
+    url('https://static.ismart.pro/fonts/renaultlife/renaultlife-condbold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+@font-face {
+  font-family: 'Renaultlife-Bold';
+  src:
+    url('https://static.ismart.pro/fonts/renaultlife/renaultlife-bold.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/renaultlife/renaultlife-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

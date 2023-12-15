@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'ALSRubl-Arial';
+  src:
+    url('https://static.ismart.pro/fonts/alsrubl/alsrubl-arial-regular.woff') format('woff'),
+    url('https://static.ismart.pro/fonts/alsrubl/alsrubl-arial-regular.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}

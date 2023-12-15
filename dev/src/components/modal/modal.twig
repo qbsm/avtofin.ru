@@ -1,0 +1,20 @@
+<div class="hidden">
+  <div id="modal-1" class="modal modal_fullscreen js-modal">
+    <div class="modal__content">
+      <h5 class="modal__title">Отправьте заявку и мы перезвоним</h5>
+      {% include "parts/form.twig" with {
+        button: {
+          class: "button-3",
+          text: "Отправить заявку"
+        }
+      }%}
+    </div>
+  </div>
+
+  <div id="modal-2" class="modal modal_fullscreen">
+    <div class="modal__content">
+      <h5 class="modal__title">Подробные условия акции</h5>
+      <div class="modal__text">{{disclaimer | raw}}</div>
+    </div>
+  </div>
+</div>

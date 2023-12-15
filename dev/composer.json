@@ -1,0 +1,9 @@
+{
+    "config": {
+        "vendor-dir": "../project/vendor"
+    },
+    "require": {
+        "twig/twig": "~1.0",
+        "ismart/form": "dev-master"
+    }
+}

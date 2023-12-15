@@ -1,0 +1,26 @@
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  @media (--sm) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.section_dark {
+  background-color: var(--color-2);
+  color: var(--color-1);
+}
+
+.section_dark .form__item {
+  color: var(--color-2);
+}
+
+.section__title {
+  margin-bottom: 1em;
+
+  @media (--sm) {
+    margin-bottom: 1.5em;
+  }
+}

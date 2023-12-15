@@ -1,0 +1,135 @@
+@keyframes moveDown {
+  0% {
+    opacity:0;
+    transform:translateY(-15px)
+  }
+  35%,
+  50%,
+  65% {
+    opacity:1;
+    transform:translateY(0)
+  }
+  to {
+    opacity:0;
+    transform:translateY(15px)
+  }
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tada {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(.95);
+  }
+
+  to {
+    visibility: visible;
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  to {
+    visibility: hidden;
+    transform: scale(.95);
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.tada {
+  animation-name: tada;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner > div {
+  width: 1em;
+  height: 1em;
+  background-color: #fff;
+  margin: 0 2px;
+  border-radius: 50%;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  animation-delay: -.32s;
+}
+
+.spinner .bounce2 {
+  animation-delay: -.16s;
+}

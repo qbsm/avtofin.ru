@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'AA-Bebasneue';
+  src:
+    url('https://static.ismart.pro/fonts/aa-bebasneue/aa-bebasneue.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/aa-bebasneue/aa-bebasneue.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

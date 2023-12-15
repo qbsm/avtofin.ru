@@ -1,0 +1,77 @@
+.section {
+}
+
+.section__item.heading-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__item.accordion-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100rem;
+}
+
+.accordion .accordion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.accordion__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-3);
+    cursor: pointer;
+}
+
+.accordion__subitem.title-wrap {
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.accordion__title {
+    font-size: 1.3em;
+    max-width: 100rem;
+}
+
+.accordion__arrow {
+    font-size: 1.5em;
+    transition: .25s all ease-out;
+    color: var(--color-3);
+}
+
+.accordion__item.active .accordion__arrow {
+    transform: rotate(90deg);
+}
+
+.accordion__subitem.desc-wrap {
+    display: none;
+    height: 0;
+    transition: 2s all ease-out;
+    overflow: hidden;
+}
+
+.accordion__item.active .accordion__subitem.desc-wrap {
+    display: flex;
+    height: auto;
+}
+
+.accordion__desc {
+    font-size: 1.2em;
+}

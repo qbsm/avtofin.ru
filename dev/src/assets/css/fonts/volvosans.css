@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'VolvoSans-Light';
+  src: url('https://static.ismart.pro/fonts/volvosans/VolvoSansWeb-Light.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VolvoSans-Regular';
+  src: url('https://static.ismart.pro/fonts/volvosans/VolvoSansWeb-Regular.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VolvoSans-Bold';
+  src: url('https://static.ismart.pro/fonts/volvosans/VolvoSansWeb-Bold.woff') format('woff');
+  font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'VolVoBroadPro-Regular';
+    src: url('https://static.ismart.pro/fonts/volvosans/volvobroadpro.woff2') format('woff2'),
+         url('https://static.ismart.pro/fonts/volvosans/volvobroadpro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

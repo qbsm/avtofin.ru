@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'HyundaiSansHead-Light';
+  src:
+    url('https://static.ismart.pro/fonts/hyundai-sans/hyundaisanshead-light.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/hyundai-sans/hyundaisanshead-light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HyundaiSansHead-Regular';
+  src:
+    url('https://static.ismart.pro/fonts/hyundai-sans/hyundaisanshead-regular.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/hyundai-sans/hyundaisanshead-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HyundaiSansHead-Medium';
+  src:
+    url('https://static.ismart.pro/fonts/hyundai-sans/hyundaisanshead-medium.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/hyundai-sans/hyundaisanshead-medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HyundaiSansHead-Bold';
+  src:
+    url('https://static.ismart.pro/fonts/hyundai-sans/hyundaisanshead-bold.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/hyundai-sans/hyundaisanshead-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HyundaiSansText-Regular';
+  src:
+    url('https://static.ismart.pro/fonts/hyundai-sans/hyundaisanstext-regular.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/hyundai-sans/hyundaisanstext-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HyundaiSansText-Bold';
+  src:
+    url('https://static.ismart.pro/fonts/hyundai-sans/hyundaisanstext-bold.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/hyundai-sans/hyundaisanstext-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'MiniSerif-Regular';
+    src: url('https://static.ismart.pro/fonts/miniserif/mini_serif-regular.woff2') format('woff2'),
+         url('https://static.ismart.pro/fonts/miniserif/mini_serif-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'MiniSerif-Bold';
+    src: url('https://static.ismart.pro/fonts/miniserif/mini_serif-bold.woff2') format('woff2'),
+         url('https://static.ismart.pro/fonts/miniserif/mini_serif-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'NeoSansPro-Light';
+  src:
+    url('https://static.ismart.pro/fonts/neosanspro/neosanspro-light.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/neosanspro/neosanspro-light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeoSansPro-Regular';
+  src:
+    url('https://static.ismart.pro/fonts/neosanspro/neosanspro-regular.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/neosanspro/neosanspro-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeoSansPro-Medium';
+  src:
+    url('https://static.ismart.pro/fonts/neosanspro/neosanspro-medium.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/neosanspro/neosanspro-medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeoSansPro-Bold';
+  src:
+    url('https://static.ismart.pro/fonts/neosanspro/neosanspro-bold.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/neosanspro/neosanspro-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeoSansPro-Ultra';
+  src:
+    url('https://static.ismart.pro/fonts/neosanspro/neosanspro-ultra.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/neosanspro/neosanspro-ultra.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

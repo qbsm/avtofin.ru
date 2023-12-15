@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'PFDinDisplayPro-Thin';
+    src:
+        url('https://static.ismart.pro/fonts/pfdindisplaypro/PFDinDisplayPro-Thin.woff2') format('woff2'),
+        url('https://static.ismart.pro/fonts/pfdindisplaypro/PFDinDisplayPro-Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFDinDisplayPro-Light';
+    src:
+        url('https://static.ismart.pro/fonts/pfdindisplaypro/PFDinDisplayPro-Light.woff2') format('woff2'),
+        url('https://static.ismart.pro/fonts/pfdindisplaypro/PFDinDisplayPro-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'PFDinDisplayPro-Regular';
+    src:
+        url('https://static.ismart.pro/fonts/pfdindisplaypro/PFDinDisplayPro-Regular.woff2') format('woff2'),
+        url('https://static.ismart.pro/fonts/pfdindisplaypro/PFDinDisplayPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'PFDinDisplayPro-Medium';
+    src:
+        url('https://static.ismart.pro/fonts/pfdindisplaypro/PFDinDisplayPro-Medium.woff2') format('woff2'),
+        url('https://static.ismart.pro/fonts/pfdindisplaypro/PFDinDisplayPro-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'PFDinDisplayPro-Bold';
+    src:
+        url('https://static.ismart.pro/fonts/pfdindisplaypro/PFDinDisplayPro-Bold.woff2') format('woff2'),
+        url('https://static.ismart.pro/fonts/pfdindisplaypro/PFDinDisplayPro-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFDinDisplayPro-Black';
+    src:
+        url('https://static.ismart.pro/fonts/pfdindisplaypro/PFDinDisplayPro-Black.woff2') format('woff2'),
+        url('https://static.ismart.pro/fonts/pfdindisplaypro/PFDinDisplayPro-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

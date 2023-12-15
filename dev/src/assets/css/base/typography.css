@@ -1,0 +1,94 @@
+@import "../fonts/alsrubl-arial.css";
+
+body {
+  font-family: var(--font-1-regular);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-1-semibold);
+}
+
+b,
+strong {
+  font-family: var(--font-1-bold);
+}
+
+.font-1-thin {
+  font-family: var(--font-1-thin);
+}
+
+.font-1-extralight {
+  font-family: var(--font-1-extralight);
+}
+
+.font-1-light {
+  font-family: var(--font-1-light);
+}
+
+.font-1-regular {
+  font-family: var(--font-1-medium);
+}
+
+.font-1-medium {
+  font-family: var(--font-1-medium);
+}
+
+.font-1-semibold {
+  font-family: var(--font-1-semibold);
+}
+
+.font-1-bold {
+  font-family: var(--font-1-bold);
+}
+
+.font-1-extrabold {
+  font-family: var(--font-1-extrabold);
+}
+
+.font-1-black {
+  font-family: var(--font-1-black);
+}
+
+.font-2-light {
+  font-family: var(--font-2-light);
+}
+
+.font-2-regular {
+  font-family: var(--font-2-regular);
+}
+
+.font-2-bold {
+  font-family: var(--font-2-bold);
+}
+
+rub,
+.rub {
+  font-family: var(--font-rub);
+  line-height: normal;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1em;
+}
+
+.num {
+  line-height: normal;
+  font-weight: 100;
+  font-style: normal;
+  white-space: nowrap;
+  font-size: 1.2em;
+  font-family: var(--font-num);
+}
+
+.heading {
+  font-size: 2em;
+  font-family: var(--font-2-regular);
+
+  @media(--md) {
+    font-size: 3em;
+  }
+}

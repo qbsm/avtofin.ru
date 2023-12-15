@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'GenesisSansHeadKROTF-Light';
+  src:
+    url('https://static.ismart.pro/fonts/genesis-sans/GenesisSansHeadKROTFLight.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/genesis-sans/GenesisSansHeadKROTFLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GenesisSansTextKROTF-Regular';
+  src:
+    url('https://static.ismart.pro/fonts/genesis-sans/GenesisSansTextKROTFRegular.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/genesis-sans/GenesisSansTextKROTFRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

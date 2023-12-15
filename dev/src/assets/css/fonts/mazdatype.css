@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'MazdaTypeCyrillic-Bold';
+    src: url('https://static.ismart.pro/fonts/mazdatype/MazdaTypeCyrillic-Bold.woff2') format('woff2'),
+        url('https://static.ismart.pro/fonts/mazdatype/MazdaTypeCyrillic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*@font-face {
+    font-family: 'MazdaTypeCyrillic-Italic';
+    src: url('https://static.ismart.pro/fonts/mazdatype/MazdaTypeCyrillic-Italic.woff2') format('woff2'),
+        url('https://static.ismart.pro/fonts/mazdatype/MazdaTypeCyrillic-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}*/
+
+@font-face {
+    font-family: 'MazdaTypeCyrillic-Regular';
+    src: url('https://static.ismart.pro/fonts/mazdatype/MazdaTypeCyrillic-Regular.woff2') format('woff2'),
+        url('https://static.ismart.pro/fonts/mazdatype/MazdaTypeCyrillic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*@font-face {
+    font-family: 'MazdaTypeCyrillic-MediumItalic';
+    src: url('https://static.ismart.pro/fonts/mazdatype/MazdaTypeCyrillic-MediumItalic.woff2') format('woff2'),
+        url('https://static.ismart.pro/fonts/mazdatype/MazdaTypeCyrillic-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}*/
+
+/*@font-face {
+    font-family: 'MazdaTypeCyrillic-BoldItalic';
+    src: url('https://static.ismart.pro/fonts/mazdatype/MazdaTypeCyrillic-BoldItalic.woff2') format('woff2'),
+        url('https://static.ismart.pro/fonts/mazdatype/MazdaTypeCyrillic-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}*/
+
+/*@font-face {
+    font-family: 'MazdaTypeCyrillic-Medium';
+    src: url('https://static.ismart.pro/fonts/mazdatype/MazdaTypeCyrillic-Medium.woff2') format('woff2'),
+        url('https://static.ismart.pro/fonts/mazdatype/MazdaTypeCyrillic-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}*/
+

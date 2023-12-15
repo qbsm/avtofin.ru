@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Gilroy-Thin';
+    src:
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-Thin.woff2') format('woff2'),
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-UltraLight';
+    src:
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-UltraLight.woff2') format('woff2'),
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-UltraLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src:
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-Light.woff2') format('woff2'),
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src:
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-Regular.woff2') format('woff2'),
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src:
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-Medium.woff2') format('woff2'),
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Semibold';
+    src:
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-Semibold.woff2') format('woff2'),
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-Semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src:
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-Bold.woff2') format('woff2'),
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Extrabold';
+    src:
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-Extrabold.woff2') format('woff2'),
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-Extrabold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Black';
+    src:
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-Black.woff2') format('woff2'),
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'Gilroy-Heavy';
+    src:
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-Black.woff2') format('woff2'),
+      url('https://static.ismart.pro/fonts/gilroy/Gilroy-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

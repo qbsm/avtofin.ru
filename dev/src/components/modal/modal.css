@@ -1,0 +1,111 @@
+@import "../../../node_modules/magnific-popup/dist/magnific-popup.css";
+:root {
+  --borderRadius: .6rem; /* border-radius модального окна */
+  --maxWidth: 64rem; /* Максимальная ширина модального окна */
+  --padding: 1.6rem 2.4rem; /* padding'и модального окна */
+  --margin: 3rem auto; /* magrin'ы модального окна */
+}
+
+
+.modal {
+  text-align: center;
+  max-width: 50rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.modal::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.modal__content {
+  width: 95%;
+  max-width: var(--maxWidth);
+  margin: var(--margin);
+  padding: var(--padding);
+  border-radius: var(--borderRadius);
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal_fullscreen .modal__content {
+  padding: 0;
+  text-align: right;
+  color: var(--color-1);
+  background: transparent;
+}
+
+.mfp-bg,
+.mfp-wrap {
+  opacity: 0;
+  transition: opacity ease-out .5s;
+}
+
+.mfp-ready {
+  opacity: 1;
+}
+
+.mfp-ready.mfp-bg {
+  opacity: .8;
+}
+
+.mfp-removing {
+  opacity: 0;
+}
+
+
+.mfp-close {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.6;
+  border: none;
+  background: none;
+  font-size: 1.6rem;
+  user-select: none;
+  color: var(--color-1) !important;
+}
+
+.mfp-close:hover {
+  opacity: 1;
+}
+
+.mfp-close:active,
+.mfp-close:focus {
+  outline: none;
+}
+
+.modal_fullscreen .mfp-close {
+  width: auto;
+  height: auto;
+
+  font-size: 44px;
+}
+
+.mfp-iframe-holder .mfp-close {
+  font-size: 44px;
+}
+
+.modal__title {
+  margin-bottom: .5em;
+}
+
+.modal .form {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.modal__text {
+  text-align: left;
+}
+
+.modal__text a {
+  color: inherit;
+}

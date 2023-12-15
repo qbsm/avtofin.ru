@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'InterstateMazda-Light';
+  src:
+    url('https://static.ismart.pro/fonts/interstatemazda/InterstateMazda-Light.woff') format('woff'),
+    url('https://static.ismart.pro/fonts/interstatemazda/InterstateMazda-Light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'InterstateMazda-Regular';
+  src:
+    url('https://static.ismart.pro/fonts/interstatemazda/InterstateMazda-Regular.eot?#iefix') format('embedded-opentype'),
+    url('https://static.ismart.pro/fonts/interstatemazda/InterstateMazda-Regular.woff') format('woff'),
+    url('https://static.ismart.pro/fonts/interstatemazda/InterstateMazda-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'InterstateMazda-Bold';
+  src:
+    url('https://static.ismart.pro/fonts/interstatemazda/InterstateMazda-Bold.woff') format('woff'),
+    url('https://static.ismart.pro/fonts/interstatemazda/InterstateMazda-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

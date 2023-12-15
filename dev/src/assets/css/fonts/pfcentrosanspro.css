@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'PFCentro-Regular';
+  src:
+    url('https://static.ismart.pro/fonts/pfcentrosanspro/pfcentrosanspro-reg.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/pfcentrosanspro/pfcentrosanspro-reg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFCentro-Bold';
+  src:
+    url('https://static.ismart.pro/fonts/pfcentrosanspro/pfcentrosanspro-bold.woff2') format('woff2'),
+    url('https://static.ismart.pro/fonts/pfcentrosanspro/pfcentrosanspro-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,7 @@
+project/assets
+project/vendor
+project/uploads
+project/templates/parts
+project/templates/pages
+dev/node_modules
+.idea

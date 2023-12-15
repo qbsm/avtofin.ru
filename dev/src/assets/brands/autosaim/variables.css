@@ -1,0 +1,17 @@
+/* Цвета */
+:root {
+    --color-3: hsla(214, 62%, 32%, 1); /* blue color */
+    --color-4: hsla(27, 84%, 57%, 1); /* orange color */
+  }
+  
+  /* Шрифты */
+  :root {
+    --font-1-light: "Montserrat-Light", sans-serif;
+    --font-1-regular: "Montserrat-Regular", sans-serif;
+    --font-1-medium: "Montserrat-Medium", sans-serif;
+    --font-1-semibold: "Montserrat-SemiBold", sans-serif;
+    --font-1-bold: "Montserrat-Bold", sans-serif;
+    --font-2-light: "Gilroy-Light", sans-serif;
+    --font-2-regular: "Gilroy-Regular", sans-serif;
+    --font-2-bold: "Gilroy-Bold", sans-serif;
+  }

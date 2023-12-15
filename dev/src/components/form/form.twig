@@ -1,0 +1,66 @@
+<form
+  class="form js-form {{mod}} CKiForm"
+  name="{{name}}"
+  id="{{name}}"
+>
+    <div class="form__container">
+
+        <div class="form__item input-wrap input-name">
+            <label class="form__label" for="name">Ваше имя</label>
+            <input type="text" id="name" class="form__input" placeholder="Введите имя" name="Имя">
+        </div>
+
+        <div class="form__item input-wrap input-phone js-field-container">
+            <label class="form__label" for="phone">Ваш телефон<span class="form__asterisk">*</span></label>
+            <input
+            type="tel"
+            class="form__input"
+            id="phone"
+            placeholder="+7 (___) ___-__-__"
+            name="Телефон"
+            pattern="[+]?[7][ ]?[(]?\d{3}[)]?[ ]?\d{3}[-]?\d{2}[-]?\d{2}"
+            required
+            >
+        </div>
+
+        <div class="form__item select-wrap">
+            <select type="text" id="select" class="form__select" name="Селект">
+                <option value="Выберите вариант">Выберите вариант</option>
+                <option value="Выберите вариант">Второй</option>
+                <option value="Выберите вариант">Выберите вариант</option>
+            </select>
+        </div>
+
+        <div class="form__item textarea-wrap">
+            <label class="form__label" for="message">Краткое описание вопроса</label>
+            <textarea type="text" id="message" class="form__textarea" placeholder="Введите текст" name="Текстареа"></textarea>
+        </div>
+
+        <div class="form__item spinner-wrap">
+            <button type="submit" name="submit" class="form__submit button button-3 js-send CKFormTrigger">
+                <span class="form__submit-title">{{button.text}}</span>
+                <span class="form__submit-loader spinner">
+                    <span class="bounce1"></span>
+                    <span class="bounce2"></span>
+                    <span class="bounce3"></span>
+                </span>
+                <span class="form__submit-success">
+                    <i class="fa fa-thumbs-o-up form__submit-icon" aria-hidden="true"></i>
+                    Успешно отправлена
+                </span>
+            </button>
+        </div>
+
+        <div class="form__item agree-wrap">
+            <span class="form__agree">
+                Нажав на кнопку "Отправить заявку", я даю согласие на обработку моих персональных данных и получение рекламных предложений. С <a class="link link-1"
+                    href="{{root_path}}/assets/agree.pdf" target="_blank" class="">условиями</a> обработки персональных данных и получения предложений - ознакомлен и согласен.
+            </span>
+        </div>
+
+        <div class="form__item hidden-wrap">
+            <input type="hidden" name="subject" value="Оставлена заявка">
+        </div>
+
+    </div>
+</form>

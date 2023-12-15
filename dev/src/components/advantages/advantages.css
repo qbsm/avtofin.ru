@@ -1,0 +1,42 @@
+.advantages {
+}
+
+.section__item.advantages-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    overflow-x: scroll;
+    width: 100%;
+
+    @media(--md) {
+        justify-content: center;
+        overflow-x: unset;
+    }
+}
+
+.advantages__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+    width: 40vw;
+
+    @media(--md) {
+        width: calc(15% - 2rem);
+    }
+}
+
+.advantages__subitem.icon-wrap {
+    width: 14rem;
+    padding: 3rem;
+    border: .4rem solid var(--color-4);
+    border-radius: 50%;
+}
+
+.advantages .title {
+    font-size: 1.2em;
+}

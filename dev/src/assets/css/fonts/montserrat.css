@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: url('https://static.ismart.pro/fonts/montserrat/Montserrat-Thin.woff2') format('woff2'),
+         url('https://static.ismart.pro/fonts/montserrat/Montserrat-Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-ExtraLight';
+    src: url('https://static.ismart.pro/fonts/montserrat/Montserrat-ExtraLight.woff2') format('woff2'),
+         url('https://static.ismart.pro/fonts/montserrat/Montserrat-ExtraLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('https://static.ismart.pro/fonts/montserrat/Montserrat-Light.woff2') format('woff2'),
+         url('https://static.ismart.pro/fonts/montserrat/Montserrat-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('https://static.ismart.pro/fonts/montserrat/Montserrat-Regular.woff2') format('woff2'),
+         url('https://static.ismart.pro/fonts/montserrat/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('https://static.ismart.pro/fonts/montserrat/Montserrat-Medium.woff2') format('woff2'),
+         url('https://static.ismart.pro/fonts/montserrat/Montserrat-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('https://static.ismart.pro/fonts/montserrat/Montserrat-SemiBold.woff2') format('woff2'),
+         url('https://static.ismart.pro/fonts/montserrat/Montserrat-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('https://static.ismart.pro/fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
+         url('https://static.ismart.pro/fonts/montserrat/Montserrat-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('https://static.ismart.pro/fonts/montserrat/Montserrat-ExtraBold.woff2') format('woff2'),
+         url('https://static.ismart.pro/fonts/montserrat/Montserrat-ExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('https://static.ismart.pro/fonts/montserrat/Montserrat-Black.woff2') format('woff2'),
+         url('https://static.ismart.pro/fonts/montserrat/Montserrat-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

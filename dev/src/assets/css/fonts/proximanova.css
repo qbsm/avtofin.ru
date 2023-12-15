@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src:
+    url('https://static.ismart.pro/fonts/proximanova/ProximaNova-Light.woff') format('woff'),
+    url('https://static.ismart.pro/fonts/proximanova/ProximaNova-Light.ttf')  format('truetype');
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src:
+    url('https://static.ismart.pro/fonts/proximanova/ProximaNova-Reg.woff') format('woff'),
+    url('https://static.ismart.pro/fonts/proximanova/ProximaNova-Reg.ttf')  format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src:
+    url('https://static.ismart.pro/fonts/proximanova/ProximaNova-Bold.woff') format('woff'),
+    url('https://static.ismart.pro/fonts/proximanova/ProximaNova-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}

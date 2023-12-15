@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'LandRover-Icons';
+    src: url('https://static.ismart.pro/fonts/landrover-icons/landrover-icons.woff2') format('woff2'),
+         url('https://static.ismart.pro/fonts/landrover-icons/landrover-icons.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.lr-icon:before {
+  font-family: "LandRover-Icons";
+  font-style: normal;
+  font-weight: normal;
+  font-size: inherit;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0;
+}
+
+.lr-icon-360:before {
+  content: "\e001";
+}

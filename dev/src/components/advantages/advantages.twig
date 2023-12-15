@@ -1,0 +1,20 @@
+<section class="advantages section">
+    <div class="container">
+        <div class="section__item heading-wrap">
+            <span class="heading text-center">{{ data.heading | raw }}</span>
+            <div class="divider"></div>
+        </div>
+        <div class="section__item advantages-wrap">
+            {% for item in data.items %}
+            <div class="advantages__item">
+                <div class="advantages__subitem icon-wrap">
+                    <img src="{{ item.icon}}" class="img-responsive">
+                </div>
+                <div class="advantages__subitem title-wrap">
+                    <span class="title text-center font-2-regular">{{ item.title | raw }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

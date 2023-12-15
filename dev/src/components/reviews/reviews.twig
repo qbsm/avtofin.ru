@@ -1,0 +1,59 @@
+<section class="reviews section">
+    <div class="container">
+        <div class="section__item heading-wrap">
+            <span class="heading text-center">{{ data.heading | raw }}</span>
+            <div class="divider"></div>
+        </div>
+        <div class="section__item cards-wrap">
+            <div class="swiper" id="reviews-swiper">
+                <div class="swiper-wrapper">
+                    {% for item in data.items %}
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card__item client-wrap">
+                                <div class="card__subitem avatar-wrap" style="background-color:{{item.color}};">
+                                    {% if item.img %}
+                                    <img src="{{ item.img }}" class="img-responsive">
+                                    {% endif %}
+                                    {% if item.letter %}
+                                    <span class="card__letter font-2-regular">{{ item.letter | raw }}</span>
+                                    {% endif %}
+                                </div>
+                                <div class="card__subitem title-wrap">
+                                    <span class="card__title font-1-medium">{{ item.name | raw }}</span>
+                                </div>
+                            </div>
+                            <div class="card__item rating-wrap">
+                                <span class="mdi mdi-star"></span>
+                                <span class="mdi mdi-star"></span>
+                                <span class="mdi mdi-star"></span>
+                                <span class="mdi mdi-star"></span>
+                                <span class="mdi mdi-star"></span>
+                            </div>
+                            <div class="card__item date-wrap">
+                                <span class="card__date">22 ноября</span>
+                            </div>
+                            <div class="card__item desc-wrap">
+                                <span class="card__desc">{{ item.desc | raw }}
+                            </div>
+                            <div class="card__item likes-wrap">
+                                <div class="card__subitem like-wrap">
+                                    <span class="mdi mdi-thumb-up card__like-icon"></span>
+                                    <span class="card__like-num font-2-regular">1</span>
+                                </div>
+                                <div class="card__subitem like-wrap">
+                                    <span class="mdi mdi-thumb-down card__like-icon"></span>
+                                    <span class="card__like-num"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+</section>
