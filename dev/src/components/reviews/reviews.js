@@ -12,7 +12,7 @@ export default () => {
                     spaceBetween: 20
                 },
                 992: {
-                    slidesPerView: 6,
+                    slidesPerView: 4,
                     spaceBetween: 20
                 }
             },

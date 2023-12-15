@@ -1,0 +1,61 @@
+.branches {
+}
+
+.section__item.map-branches-wrap {
+    width: 100%;
+    height: 70rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.branches .section__subitem.map-wrap {
+    width: 65%;
+    height: 100%;
+}
+
+.branches .section__subitem.branches-wrap {
+    width: calc(35% - 2rem);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    overflow-y: scroll;
+}
+
+.branches .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--color-2);
+    /*
+    border-radius: 1rem;
+    box-shadow: var(--shadow-1);*/
+}
+
+.branches .card__title {
+    font-size: 1.2em;
+}
+
+.branches .card__item.address-wrap,
+.branches .card__item.working-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.branches .card__label {
+    font-size: .9em;
+    opacity: .7;
+}
+
+.branches .card__phone {
+    font-size: 1.2em;
+}

@@ -1,0 +1,32 @@
+<section class="branches section">
+    <div class="container">
+        <div class="section__item heading-wrap">
+            <span class="heading text-center">{{ data.heading | raw }}</span>
+            <div class="divider"></div>
+        </div>
+        <div data-center="{{data.center}}" data-centerSM="{{data.centerSM}}" data-zoom="{{data.zoom}}" data-container-id="map" class="section__item map-branches-wrap js-map">
+            <div class="section__subitem map-wrap" id="map">
+            </div>
+            <div class="section__subitem branches-wrap">
+                {% for item in data.items %}
+                <div class="card">
+                    <div class="card__item city-wrap">
+                        <span class="card__title font-2-medium">{{ item.city | raw }}
+                    </div>
+                    <div class="card__item address-wrap">
+                        <span class="card__label">Адрес</span>
+                        <span class="card__value">{{ item.address | raw }}</span>
+                    </div>
+                    <div class="card__item working-wrap">
+                        <span class="card__label">Время работы</span>
+                        <span class="card__value">{{ item.working | raw }}</span>
+                    </div>
+                    <div class="card__item phone-wrap">
+                        <a href="tel:{{ item.phone.href }}" class="link link-1 nowrap font-2-semibold card__phone">{{ item.phone.title | raw}}</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

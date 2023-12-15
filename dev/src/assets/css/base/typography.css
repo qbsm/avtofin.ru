@@ -100,3 +100,12 @@ rub,
     font-size: 3em;
   }
 }
+
+.subheading {
+  font-size: 1.2em;
+  font-family: var(--font-2-medium);
+
+  @media(--md) {
+    font-size: 1.4em;
+  }
+}

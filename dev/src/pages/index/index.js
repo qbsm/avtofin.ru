@@ -5,7 +5,7 @@ import linkTo from 'modules/link-to';
 import modal from 'modal/modal';
 import form from 'form/form';
 
-import actions from 'actions/actions';import advantages from 'advantages/advantages';import reviews from 'reviews/reviews';import accordion from 'accordion/accordion';
+import actions from 'actions/actions';import advantages from 'advantages/advantages';import reviews from 'reviews/reviews';import accordion from 'accordion/accordion';import branches from 'branches/branches';import conditions from 'conditions/conditions';
 /*eslint-enable */
 
 
@@ -15,5 +15,5 @@ $(document).ready(() => {
   linkTo(0);
   modal();
   form();
-   actions(); advantages(); reviews(); accordion();
+   actions(); advantages(); reviews(); accordion(); branches(); conditions();
 });
