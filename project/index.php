@@ -43,6 +43,11 @@ $page_name =
 $page_name = $page_name ? $page_name : "index";
 $data = getPageData($page_name);
 
+$indexData = getPageData('index');
+foreach ($indexData['globals'] ?? [] as $name => $value) {
+    $data[$name] = $value;
+}
+
 $disclaimer = file_get_contents($config["data_dir"] . "/content/disclaimer.html");
 $manifest = readJSON($config["assets_dir"] ."/json/rev-manifest.json");
 $data["manifest"] = $manifest;

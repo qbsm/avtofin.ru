@@ -1,0 +1,79 @@
+<section class="calculator section">
+    <div class="container">
+        <div class="section__item heading-wrap">
+            <span class="heading text-center">{{ data.heading | raw }}</span>
+            <div class="divider"></div>
+        </div>
+        <div class="section__item calc-wrap">
+            <div class="calc">
+                <div class="calc__item result-wrap">
+                    <div class="calc__subitem payment-wrap">
+                        <span class="payment__label label font-1-medium">Ежемесячный платеж</span>
+                        <span class="payment__value value font-1-semibold"><span>1000</span> ₽</span>
+                    </div>
+                    <div class="calc__subitem time-wrap">
+                        <span class="time__label label font-1-medium">Срок займа</span>
+                        <span class="time__value value font-1-semibold"><span>12</span> месяцев</span>
+                    </div>
+                    <div class="calc__subitem rate-wrap">
+                        <span class="rate__label label font-1-medium">Процентная ставка</span>
+                        <span class="rate__value value font-1-semibold"><span>3</span> % в месяц</span>
+                    </div>
+                </div>
+                <div class="calc__item summ-wrap">
+                    <div class="calc__subitem input-title-wrap">
+                        <div class="calc__inner title-wrap">
+                            <span class="title">Сумма займа</span>
+                        </div>
+                        <div class="calc__inner input-wrap">
+                            <div class="calc__add input-wrap">
+                                <input type="number" class="calc__input" id="summ" value="300000">
+                            </div>
+                            <div class="calc__add label-wrap">
+                                <span class="value">₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calc__subitem slider-wrap">
+                        <div class="calc__inner slider-wrap">
+                            <div class="calc__slider"></div>
+                            <span class="calc__handle"></span>
+                        </div>
+                        <div class="calc__inner label-wrap">
+                            <span class="slider__label label" data-val="1"><span>20000</span> ₽</span>
+                            <span class="slider__label label" data-val="1"><span>2000000</span> ₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calc__item time-wrap">
+                    <div class="calc__subitem input-title-wrap">
+                        <div class="calc__inner title-wrap">
+                            <span class="title">Срок займа</span>
+                        </div>
+                        <div class="calc__inner input-wrap">
+                            <div class="calc__add input-wrap">
+                                <input type="number" class="calc__input" id="time" value="12">
+                            </div>
+                            <div class="calc__add label-wrap">
+                                <span class="value">месяцев</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calc__subitem slider-wrap">
+                        <div class="calc__inner slider-wrap">
+                            <div class="calc__slider"></div>
+                            <span class="calc__handle"></span>
+                        </div>
+                        <div class="calc__inner label-wrap">
+                            <span class="slider__label label" data-val="1"><span>1</span> мес</span>
+                            <span class="slider__label label" data-val="1"><span>12</span> мес</span>
+                            <span class="slider__label label" data-val="1"><span>24</span> мес</span>
+                            <span class="slider__label label" data-val="1"><span>36</span> мес</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="calc__item form-wrap"></div>
+            </div>
+        </div>
+    </div>
+</section>

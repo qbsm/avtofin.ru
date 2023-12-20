@@ -1,0 +1,15 @@
+.nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav__link {
+   font-size: .9em; 
+}

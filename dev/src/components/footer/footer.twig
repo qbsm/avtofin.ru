@@ -1,0 +1,40 @@
+<section class="footer section">
+    <div class="container">
+        <div class="section__item header-wrap">
+            <div class="section__subitem logo-wrap">
+                <img src="{{ data.logo | raw }}" class="">
+            </div>
+            <div class="section__subitem callback-wrap">
+                <div class="section__inner link-wrap">
+                    <a class="link link-a-b footer__link-phone font-2-semibold" href="tel:{{ phone.href }}">{{ phone.title }}</a>
+                </div>
+                <div class="section__inner">
+                    <span class="footer__callback-title">Бесплатный звонок по России</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer__divider"></div>
+
+        <div class="section__item nav-wrap">
+            <div class="section__subitem title-wrap">
+                <span class="font-1-semibold">Навигация</span>
+            </div>
+            {% for nav in nav %}
+            <div class="section__subitem link-wrap">
+                <a href="{{ nav.href }}" class="link link-a-b {{ nav.class }}">{{ nav.title | raw }}</a>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="section__item link-wrap">
+            <a href="https://mkk-bvs.ru" target="_blank" class="link link-a-b font-1-medium">Юридическая информация <span class="mdi mdi-chevron-right"></span></a>
+        </div>
+
+        <div class="section__item info-wrap">
+            <span class="footer__copyright font-1-semibold">{{ data.copyright | raw }}</span>
+            <span class="footer__disclaimer">{{ data.disclaimer | raw }}</span>
+            <span class="footer__owner">{{ data.owner | raw }}, {{ phone.title }}</span>
+            
+        </div>
+    </div>
+</section>

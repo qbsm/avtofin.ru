@@ -1,0 +1,119 @@
+.calculator .section__item.calc-wrap {
+    width: 100%;
+}
+
+.calc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+    border-radius: 2rem;
+    box-shadow: var(--shadow-3);
+}
+
+.calc__item.result-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: hsla(0, 0%, 95%, 1);
+    border-radius: 2rem;
+}
+
+.calc__item.result-wrap .calc__subitem {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .5rem;
+
+    @media(--md) {
+        width: calc(33.33% - 2rem);
+    }
+}
+
+.calc .label {
+    font-size: .9em;
+    opacity: .7;
+}
+.calc .value {
+    font-size: 2em;
+}
+
+.calc .title {
+    font-size: 1.2em;
+}
+
+.calc__input {
+    padding: 0 1.5rem;
+    width: 20rem;
+    height: 6rem;
+    font-size: 2em;
+    border: 2px solid hsla(0, 0%, 90%, 1);
+    border-radius: .5rem;
+}
+
+.calc__item.summ-wrap,
+.calc__item.time-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.calc__subitem.input-title-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.calc__inner.input-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.calc__subitem.slider-wrap {
+    width: 100%;
+}
+
+.calc__inner.slider-wrap {
+    position: relative;
+    height: 1.6rem;
+    border-radius: 1rem;
+    box-shadow: inset 2px 2px 5px rgb(0 0 0 / 30%), 1px 1px 5px rgb(255 255 255);
+}
+
+.calc__slider {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    background-color: var(--color-4);
+    border-radius: 1rem;
+}
+
+.calc__handle {
+    position: absolute;
+    height: 3.2rem;
+    width: 4rem;
+    top: -1rem;
+    border-radius: 1.5rem;
+    background-color: var(--color-4);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.calc__inner.label-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

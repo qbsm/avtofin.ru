@@ -1,7 +1,11 @@
 .button {
   cursor: pointer;
   border: none;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 0;
   font-size: inherit;
   position: relative;
   text-decoration: none;
@@ -10,7 +14,7 @@
   text-transform: uppercase;
   user-select: none;
   outline: none;
-  box-shadow: var(--shadow-inset-1);
+
 }
 
 .button-1 {
@@ -136,4 +140,12 @@
 
 .button-lg {
   padding: 1.5em 2em;
+}
+
+.button-circle {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  font-size: 1.2em;
+  line-height: 1em;
 }

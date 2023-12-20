@@ -1,2 +1,27 @@
 .conditions {
 }
+
+.section__item.list-wrap {
+    max-width: 75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.conditions ul {
+    padding: 0;
+    margin: 0;
+    margin-left: 1.5rem;
+}
+
+.conditions li {
+    margin-bottom: .5rem;
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
+.conditions .giver {
+    font-size: .8em;
+}

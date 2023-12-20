@@ -2,14 +2,8 @@
 .link {
   cursor: pointer;
   text-decoration: none;
-  color: inherit;
-  background-color: transparent;
-  background-size: 100% 1px;
-  background-position: 0 1.05em;
-  background-repeat: no-repeat;
   border: none;
-  padding: 0 0 .1em;
-  display: inline-block;
+  transition: .25s color ease-out;
 }
 
 .link:hover {
@@ -17,15 +11,25 @@
 }
 
 .link-1 {
-  background-image: linear-gradient(var(--color-1), var(--color-1));
+  color: var(--color-1);
+}
+
+.link-1:hover,
+.link-1:active {
+  color: var(--color-3);
 }
 
 .link-2 {
-  background-image: linear-gradient(var(--color-2), var(--color-2));
+  color: var(--color-2);
 }
 
 .link-3 {
-  background-image: linear-gradient(var(--color-3), var(--color-3));
+  color: var(--color-3);
+}
+
+.link-3:hover,
+.link-3:active {
+  color: var(--color-1);
 }
 
 .link-dashed-1 {
@@ -59,4 +63,89 @@
 .link-dashed-3:hover {
   background-image: linear-gradient(var(--color-3), var(--color-3));
   background-size: 100% 1px;
+}
+
+.link-wrap {
+  position: relative;
+}
+
+.link-a {
+  padding: .1rem 0;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+.link-a::after { 
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background: none;
+  bottom: -.1rem;
+  transition: .25s;
+}
+
+.link-a:hover {
+  text-decoration: none;
+}
+
+.link-a:hover::after {
+  width: 100%;
+  background: hsla(0, 0%, 100%, 1);
+}
+
+.link-a-b {
+  padding: .1rem 0;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+.link-a-b::after { 
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background: none;
+  bottom: -.1rem;
+  transition: .25s;
+}
+
+.link-a-b:hover {
+  text-decoration: none;
+}
+
+.link-a-b:hover::after {
+  width: 100%;
+  background: hsla(0, 0%, 7%, 1);
+}
+
+.link-a-c {
+  padding: .1rem 0;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+  color: var(--color-3);
+}
+
+.link-a-c::after { 
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background: none;
+  bottom: -.1rem;
+  transition: .25s;
+}
+
+.link-a-c:hover {
+  text-decoration: none;
+}
+
+.link-a-c:hover::after {
+  width: 100%;
+  background: var(--color-3);
 }

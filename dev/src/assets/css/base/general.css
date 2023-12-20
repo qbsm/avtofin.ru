@@ -97,3 +97,22 @@ rub {
   line-height: inherit;
   font-size: inherit;
 }
+
+*::-webkit-scrollbar {
+  width: .2rem;
+  height: .2rem;
+}
+
+body::-webkit-scrollbar {
+  width: .4rem;
+  height: .4rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--color-3);
+  border-radius: 2rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-6);
+}

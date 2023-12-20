@@ -1,0 +1,9 @@
+<section class="nav">
+    <div class="container">
+        {% for item in data.items %}
+        <div class="nav__item link-wrap">
+            <a href="{{ item.href }}" class="link link-a-b nav__link font-1-medium {{ item.class }}">{{ item.title | raw }}</a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
