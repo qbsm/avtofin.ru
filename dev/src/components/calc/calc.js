@@ -24,18 +24,18 @@ export default () => {
         $('.js-amount-range').on('input', calc).on('change', calc);
         $('.js-months-range').on('input', calc).on('change', calc);
         $('.js-amount-input').on('focus', function() {
-            $(this).val($(this).val().replace(' ', ''));
+            $(this).val($(this).val().replaceAll(' ', ''));
         });
         $('.js-amount-input').on('focusout', function() {
             const amount = $(this).val();
             if (amount !== '') {
-                $('.js-amount-range').val(amount.replace(' ', '')).change();
+                $('.js-amount-range').val(amount.replaceAll(' ', '')).change();
             }
         });
         $('.js-amount-input').on('input', function(){
             const amount = $(this).val();
             if (amount !== '') {
-                $('.js-amount-range').val(amount.replace(' ', '')).change();
+                $('.js-amount-range').val(amount.replaceAll(' ', '')).change();
             }
         });
         $('.js-months-input').on('input', function(){
