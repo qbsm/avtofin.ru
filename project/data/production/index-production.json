@@ -77,7 +77,20 @@
     {
       "name": "calc",
       "visible": true,
-      "heading": "Рассчитайте сумму платежа"
+      "heading": "Рассчитайте сумму платежа",
+      "amount": {
+          "min": 50000,
+          "max": 20000000,
+          "step": 5000,
+          "value": 300000
+      },
+      "time": {
+          "min": 1,
+          "max": 36,
+          "step": 1,
+          "value": 12
+      },
+      "rate": 3.0
     },
     {
       "name": "actions",

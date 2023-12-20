@@ -117,3 +117,9 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.calc input[type="range"] {
+    width: 100%;
+    accent-color: #ed8835;
+    height: 30px;
+}

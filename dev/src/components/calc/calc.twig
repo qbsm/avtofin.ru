@@ -9,15 +9,15 @@
                 <div class="calc__item result-wrap">
                     <div class="calc__subitem payment-wrap">
                         <span class="payment__label label font-1-medium">Ежемесячный платеж</span>
-                        <span class="payment__value value font-1-semibold"><span>1000</span> ₽</span>
+                        <span class="payment__value value font-1-semibold"><span class="js-payment-label">-</span> ₽</span>
                     </div>
                     <div class="calc__subitem time-wrap">
                         <span class="time__label label font-1-medium">Срок займа</span>
-                        <span class="time__value value font-1-semibold"><span>12</span> месяцев</span>
+                        <span class="time__value value font-1-semibold"><span class="js-months-label">{{ data.time.value }}</span> месяцев</span>
                     </div>
                     <div class="calc__subitem rate-wrap">
                         <span class="rate__label label font-1-medium">Процентная ставка</span>
-                        <span class="rate__value value font-1-semibold"><span>3</span> % в месяц</span>
+                        <span class="rate__value value font-1-semibold"><span class="js-rate-label" data-rate="{{ data.rate }}">{{ data.rate }}</span> % в месяц</span>
                     </div>
                 </div>
                 <div class="calc__item summ-wrap">
@@ -27,7 +27,7 @@
                         </div>
                         <div class="calc__inner input-wrap">
                             <div class="calc__add input-wrap">
-                                <input type="number" class="calc__input" id="summ" value="300000">
+                                <input type="text" class="calc__input js-amount-input" id="summ" value="300000">
                             </div>
                             <div class="calc__add label-wrap">
                                 <span class="value">₽</span>
@@ -35,13 +35,14 @@
                         </div>
                     </div>
                     <div class="calc__subitem slider-wrap">
-                        <div class="calc__inner slider-wrap">
-                            <div class="calc__slider"></div>
-                            <span class="calc__handle"></span>
-                        </div>
+                        <input type="range" class="js-amount-range" name="amount" min="{{ data.amount.min }}" max="{{ data.amount.max }}" step="{{ data.amount.step }}" value="{{ data.amount.value }}">
+{#                        <div class="calc__inner slider-wrap">#}
+{#                            <div class="calc__slider"></div>#}
+{#                            <span class="calc__handle"></span>#}
+{#                        </div>#}
                         <div class="calc__inner label-wrap">
-                            <span class="slider__label label" data-val="1"><span>20000</span> ₽</span>
-                            <span class="slider__label label" data-val="1"><span>2000000</span> ₽</span>
+                            <span class="slider__label label" data-val="1"><span>{{ data.amount.min |number_format(0, ',', ' ') }}</span> ₽</span>
+                            <span class="slider__label label" data-val="1"><span>{{ data.amount.max |number_format(0, ',', ' ') }}</span> ₽</span>
                         </div>
                     </div>
                 </div>
@@ -52,7 +53,7 @@
                         </div>
                         <div class="calc__inner input-wrap">
                             <div class="calc__add input-wrap">
-                                <input type="number" class="calc__input" id="time" value="12">
+                                <input type="text" class="calc__input js-months-input" id="time" value="{{ data.time.value }}">
                             </div>
                             <div class="calc__add label-wrap">
                                 <span class="value">месяцев</span>
@@ -60,10 +61,11 @@
                         </div>
                     </div>
                     <div class="calc__subitem slider-wrap">
-                        <div class="calc__inner slider-wrap">
-                            <div class="calc__slider"></div>
-                            <span class="calc__handle"></span>
-                        </div>
+                        <input type="range" class="js-months-range" name="months" min="{{ data.time.min }}" max="{{ data.time.max }}" step="{{ data.time.step }}" value="{{ data.time.value }}">
+{#                        <div class="calc__inner slider-wrap">#}
+{#                            <div class="calc__slider"></div>#}
+{#                            <span class="calc__handle"></span>#}
+{#                        </div>#}
                         <div class="calc__inner label-wrap">
                             <span class="slider__label label" data-val="1"><span>1</span> мес</span>
                             <span class="slider__label label" data-val="1"><span>12</span> мес</span>
