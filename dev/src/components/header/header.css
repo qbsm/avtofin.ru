@@ -12,10 +12,18 @@
 }
 
 .header .section__item.logo-wrap {
-    width: 10rem;
+    width: 20rem;
 
     @media(--md) {
         width: 30rem;
+    }
+}
+
+.link-wrap-phone {
+    display: none;
+
+    @media(--md) {
+        display: block;
     }
 }
 
@@ -24,11 +32,15 @@
 }
 
 .header .section__item.info-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: .25rem;
+    display: none;
+
+    @media(--md) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: .25rem;
+    }
 }
 
 .header .section__subitem.divider {

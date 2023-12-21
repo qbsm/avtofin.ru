@@ -1,6 +1,11 @@
 .nav {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    display: none;
+
+    @media(--md) {
+        display: block;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 }
 
 .nav .container {

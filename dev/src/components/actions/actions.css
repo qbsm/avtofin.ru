@@ -2,15 +2,22 @@
 }
 
 .actions .section__item.cards-wrap {
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2rem;
+    overflow-x: scroll;
+
+    @media(--md) {
+        overflow-x: unset;
+    }
 }
 
 .actions .card {
     width: 100%;
-    height: 300px;
+    min-width: 25rem;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

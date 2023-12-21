@@ -9,15 +9,17 @@
                 <div class="calc__item result-wrap">
                     <div class="calc__subitem payment-wrap">
                         <span class="payment__label label font-1-medium">Ежемесячный платеж</span>
-                        <span class="payment__value value font-1-semibold"><span class="js-payment-label">-</span> ₽</span>
+                        <span class="payment__value nobr value font-1-semibold"><span class="js-payment-label">-</span>&#8201;₽</span>
                     </div>
+                    <div class="divider"></div>
                     <div class="calc__subitem time-wrap">
                         <span class="time__label label font-1-medium">Срок займа</span>
-                        <span class="time__value value font-1-semibold"><span class="js-months-label">{{ data.time.value }}</span> месяцев</span>
+                        <span class="time__value nobr value font-1-semibold"><span class="js-months-label">{{ data.time.value }}</span> месяцев</span>
                     </div>
+                    <div class="divider"></div>
                     <div class="calc__subitem rate-wrap">
                         <span class="rate__label label font-1-medium">Процентная ставка</span>
-                        <span class="rate__value value font-1-semibold"><span class="js-rate-label" data-rate="{{ data.rate }}">{{ data.rate }}</span> % в месяц</span>
+                        <span class="rate__value nobr value font-1-semibold"><span class="js-rate-label" data-rate="{{ data.rate }}">{{ data.rate }}</span>&#8201;% в месяц</span>
                     </div>
                 </div>
                 <div class="calc__item summ-wrap">
@@ -53,7 +55,7 @@
                         </div>
                         <div class="calc__inner input-wrap">
                             <div class="calc__add input-wrap">
-                                <input type="text" class="calc__input js-months-input" id="time" value="{{ data.time.value }}">
+                                <input type="text" class="calc__input calc__input-time  js-months-input" id="time" value="{{ data.time.value }}">
                             </div>
                             <div class="calc__add label-wrap">
                                 <span class="value">месяцев</span>
