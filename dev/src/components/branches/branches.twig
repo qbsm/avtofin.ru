@@ -8,9 +8,9 @@
             <div class="section__subitem map-placemarks-wrap js-map" data-center="{{data.center}}" data-centerSM="{{data.centerSM}}" data-zoom="{{data.zoom}}" data-container-id="map">
                 <div class="section__inner placemarks-wrap">
                     <div class="placemark hidden">
-                        {% for placemark in placemarks %}
-                          <div class="map__balloon" data-location="{{placemark.location}}" data-image-size="64,90" data-image-offset="-32,-90" data-icon="assets/img/brand/placemark.png?v=2">
-                            <a href="{{placemark.yandex}}" class="map__balloon__link" target="blank" rel="noopener noreferrer">
+                        {% for item in data.items %}
+                          <div class="map__balloon" data-location="{{item.location}}" data-image-size="64,90" data-image-offset="-32,-90" data-icon="assets/img/brand/placemark.png?v=2">
+                            <a href="{{item.yandex}}" class="map__balloon__link" target="blank" rel="noopener noreferrer">
                               <img src="{{root}}data/img/map/yandex.svg" class="img-responsive">
                             </a>
                           </div>
@@ -25,6 +25,9 @@
                 <div class="card">
                     <div class="card__item city-wrap">
                         <span class="card__title font-2-medium">{{ item.city | raw }}
+                    </div>
+                    <div class="card__item link-wrap">
+                        <a href="#" class="link link-a-b nowrap font-2-semibold card__map-link js-map-link" data-location="{{ item.location }}">Смотреть на карте</a>
                     </div>
                     <div class="card__item address-wrap">
                         <span class="card__label">Адрес</span>
