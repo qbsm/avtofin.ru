@@ -15,9 +15,10 @@
 }
 
 .actions .card {
+    position: relative;
     width: 100%;
     min-width: 25rem;
-    min-height: 300px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -41,4 +42,10 @@
 
 .actions .card__subtitle {
     font-size: 1.4em;
+}
+
+.actions .card__icon-wrap {
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
 }

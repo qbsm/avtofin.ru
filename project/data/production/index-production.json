@@ -102,21 +102,24 @@
           "subtitle": "",
           "desc": "",
           "button": "Участвовать в акции",
-          "bg": ""
+          "bg": "",
+          "icon": "data/img/actions/money-bag-dynamic-color.png"
         },
         {
           "title": "7 дней пользования займом бесплатно для новых клиентов",
           "subtitle": "",
           "desc": "",
           "button": "Участвовать в акции",
-          "bg": ""
+          "bg": "",
+          "icon": "data/img/actions/calculator-dynamic-color.png"
         },
         {
           "title": "5-й месяц пользования займом в подарок",
           "subtitle": "",
           "desc": "",
           "button": "Участвовать в акции",
-          "bg": ""
+          "bg": "",
+          "icon": "data/img/actions/gift-dynamic-color.png"
         }
       ]
     }
