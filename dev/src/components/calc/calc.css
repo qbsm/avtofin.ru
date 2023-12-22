@@ -141,7 +141,7 @@ input[type="range"] {
     -webkit-appearance: none;
     border-radius: 1rem;
     background-color: var(--color-4);
-    accent-color: var(--color-4);
+    accent-color: var(--color-1);
   }
   
 
@@ -161,3 +161,24 @@ input[type="range"] {
     justify-content: space-between;
     align-items: center;
 }
+
+
+.calc .form__container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "input-name"
+      "input-phone"
+      "spinner-wrap"
+      "agree-wrap";
+    gap: .5rem;
+  
+    @media (--sm) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "input-name input-phone spinner-wrap"
+        "agree-wrap agree-wrap agree-wrap";
+        gap: 1rem;
+    }
+  }

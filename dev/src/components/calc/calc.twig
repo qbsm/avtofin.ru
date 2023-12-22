@@ -76,7 +76,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="calc__item form-wrap"></div>
+                <div class="calc__item form-wrap">
+                    {% include "parts/form.twig" with 
+                        {
+                            button: {
+                                class: "button-3 button-rounded",
+                                text: "Отправить заявку"
+                            }
+                        }
+                    %}
+                </div>
             </div>
         </div>
     </div>
