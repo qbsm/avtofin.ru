@@ -15,20 +15,23 @@ export default () => {
       function init() {
         const $map = $(map);
         const $balloons = $map.find(`.${classNames.balloon}`);
-        let center = String($map.attr('data-center')).split(',');
+        const center = String($map.attr('data-center')).split(',');
         const centerSM = String($map.attr('data-centerSM')).split(',');
         const zoom = $map.attr('data-zoom');
+        const zoomSM = $map.attr('data-zoomSM');
         const containerId = $map.attr('data-container-id');
 
         let currentCenter = center;
+        let currentZoom = zoom;
 
         if ($window.width() < 992) {
           console.log(1);
           currentCenter = centerSM;
+          currentZoom = zoomSM;
         }
 
         const myMap = new ymaps.Map(containerId, {
-          zoom,
+          zoom: currentZoom,
           center: currentCenter,
           controls: ["zoomControl"],
         });
@@ -61,8 +64,10 @@ export default () => {
         $window.resize( function handleResizeWindow(e) {
           if ($window.width() < 992) {
             myMap.setCenter(centerSM);
+            myMap.setZoom(centerSM);
           } else {
             myMap.setCenter(center);
+              myMap.setZoom(zoom);
           }
         })
 
