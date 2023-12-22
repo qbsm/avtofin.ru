@@ -84,3 +84,12 @@
 .branches .card__phone {
     font-size: 1.2em;
 }
+
+.map__balloon__link {
+    display: block;
+    width: 200px;
+}
+
+.map__balloon__link:last-child {
+    margin-bottom: 0;
+}
