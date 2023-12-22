@@ -30,6 +30,7 @@ export default () => {
         const myMap = new ymaps.Map(containerId, {
           zoom,
           center: currentCenter,
+          controls: ["zoomControl"],
         });
 
         $balloons.each((indexBalloon, balloon) => {
