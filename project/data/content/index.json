@@ -1,6 +1,7 @@
 {
   "page": "index",
-  "title": "Главная страница",
+  "title": "Автоломбард под залог ПТС – Деньги под залог Autosaim.ru",
+  "description": "Ищете, где взять кредит под залог ПТС? Получите деньги за 20 минут в автоломбарде. Автомобиль остается у вас!",
   "emailRecipients": [
   ],
   "globals": {
@@ -45,7 +46,7 @@
     {
       "name": "header",
       "visible": true,
-      "logo": "data/img/ui/autosaim-logo.svg",
+      "logo": "data/img/ui/autosaim-logo.svg?v=1",
       "button": "Заказать звонок"
     },
     {
@@ -54,24 +55,35 @@
       "items": [
         {
           "title": "Рассчитать платеж",
-          "href": ".",
-          "class": "js-link-to"
-        },
-        {
-          "title": "Наши филиалы",
-          "href": ".",
-          "class": "js-link-to"
-        },
-        {
-          "title": "Условия выдачи",
-          "href": ".",
+          "href": ".calculator",
           "class": "js-link-to"
         },
         {
           "title": "Акции и специальные предложения",
-          "href": ".",
+          "href": ".actions",
+          "class": "js-link-to"
+        },
+        {
+          "title": "Наши филиалы",
+          "href": ".branches",
+          "class": "js-link-to"
+        },
+        {
+          "title": "Условия выдачи",
+          "href": ".conditions",
           "class": "js-link-to"
         }
+      ]
+    },
+    {
+      "name": "intro",
+      "visible": true,
+      "heading": "Деньги под залог ПТС",
+      "subheading": "Всего 20 минут от заявки до выдачи",
+      "items": [
+        "Автомобиль остается у вас",
+        "Любые виды транспорта",
+        "Прозрачно и честно"
       ]
     },
     {
@@ -98,12 +110,12 @@
       "heading": "Акции и специальные предложения",
       "items": [
         {
-          "title": "Приведи друга и получи <nobr>5000 ₽</nobr>",
+          "title": "Приведи друга<br>и получи <nobr>5&#8239;000&#8239;₽</nobr>",
           "subtitle": "",
           "desc": "",
           "button": "Участвовать в акции",
           "bg": "",
-          "icon": "data/img/actions/money-bag-dynamic-color.png"
+          "icon": "data/img/actions/calculator-front-color.png"
         },
         {
           "title": "7 дней пользования займом бесплатно для новых клиентов",
@@ -111,15 +123,15 @@
           "desc": "",
           "button": "Участвовать в акции",
           "bg": "",
-          "icon": "data/img/actions/calculator-dynamic-color.png"
+          "icon": "data/img/actions/target-front-color.png"
         },
         {
-          "title": "5-й месяц пользования займом в подарок",
+          "title": "5-й месяц <nobr>пользования займом</nobr> <nobr>в подарок</nobr>",
           "subtitle": "",
           "desc": "",
           "button": "Участвовать в акции",
           "bg": "",
-          "icon": "data/img/actions/gift-dynamic-color.png"
+          "icon": "data/img/actions/money-bag-front-color.png"
         }
       ]
     }
@@ -191,7 +203,7 @@
           "img": "data/img/reviews/1.jpg",
           "letter": "",
           "color": "",
-          "days": 50,
+          "days": 45,
           "name": "Елена Семенова",
           "desc": "Автозайм был для меня спасением в непредвиденной финансовой ситуации. Я получила нужную сумму денег очень быстро, а условия погашения оказались гибкими и адекватными. Благодарна за помощь!",
           "likes": 1
@@ -393,6 +405,7 @@
       "visible": true,
       "heading": "Условия предоставления займов",
       "subheading": "C обеспечением в виде залога транспортного средства",
+      "logo": "data/img/ui/autosaim-logo.svg",
       "items": [
         "От <nobr><span class='font-1-semibold'>1 000</span> ₽</nobr> до <nobr><span class='font-1-semibold'>500 000</span> ₽</nobr>. Деньги получаете в день оформления договора займа.",
         "Процент за пользование денег до <span class='font-1-semibold'>88.081</span> % годовых.",
@@ -402,7 +415,7 @@
         "Возможно досрочное погашение без штрафов в любой день пользования займом. Проценты оплачиваются только за фактический срок пользования займом.",
         "Предложение не является офертой. Условия получения денег предлагаются в индивидуальном порядке."
       ],
-      "example": "Пример расчета: Вы берете <span class='font-1-semibold'>30 000</span> ₽ на <span class='font-1-semibold'>61</span> день со ставкой <span class='font-1-semibold'>0.241</span> % в день, переплата за весь срок составит <span class='font-1-semibold'>4410.30</span> ₽. Итого вы возвращаете <span class='font-1-semibold'>34 410.30</span> ₽.",
+      "example": "Пример расчета: Вы берете <span class='font-1-semibold'>30 000</span> ₽ на <span class='font-1-semibold'>61</span> день со ставкой <span class='font-1-semibold'>0.241</span> % в день, переплата за весь срок составит <span class='font-1-semibold'>4410,30</span> ₽. Итого вы возвращаете <span class='font-1-semibold'>34 410,30</span> ₽.",
       "giver": "Услугу по выдаче займа предоставляет: Общество с ограниченной ответственностью Микрокредитная компания «БВС» (ООО МКК «БВС»), зарегистрированное в реестре микрофинансовых организаций 14 июня 2022 года за номером 2204125009881, ИНН 3808276358, ОГРН 1223800004097, место нахождения: 664081, Иркутская область, г.о. Город Иркутск, г. Иркутск, мкр. Крылатый, д. 13"
     },
     {

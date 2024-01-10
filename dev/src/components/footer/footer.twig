@@ -13,8 +13,6 @@
                 </div>
             </div>
         </div>
-        <div class="footer__divider"></div>
-
         <div class="section__item nav-wrap">
             <div class="section__subitem title-wrap">
                 <span class="font-1-semibold">Навигация</span>
@@ -25,16 +23,14 @@
             </div>
             {% endfor %}
         </div>
-
         <div class="section__item link-wrap">
             <a href="https://mkk-bvs.ru" target="_blank" class="link link-a-b font-1-medium">Юридическая информация <span class="mdi mdi-chevron-right"></span></a>
         </div>
-
+        <div class="footer__divider"></div>
         <div class="section__item info-wrap">
             <span class="footer__copyright font-1-semibold">{{ data.copyright | raw }}</span>
             <span class="footer__disclaimer">{{ data.disclaimer | raw }}</span>
             <span class="footer__owner">{{ data.owner | raw }}, {{ phone.title }}</span>
-            
         </div>
     </div>
 </section>

@@ -1,5 +1,21 @@
-<section class="intro section">
-    <div class="container">
+<section class="intro">
+    <div class="grid-padding-left grid-container">
+        <div class="sections__item content-wrap">
+            <div class="sections__subitem heading-wrap">
+                <span class="heading font-2-medium">{{ data.heading | raw }}</span>
+                <span class="subheading uppercase font-2-medium">{{ data.subheading | raw }}</span>
+            </div>
+            <ui class="list">
+                {% for item in data.items %}
+                <li class="list-item font-1-regular">{{ item | raw }}</li>
+                {% endfor %}
+            </ui>
+            <button class="button button-3 button-lg button-rounded js-show-modal" data-modal="#modal-1">Заявка на залог</button>
+        </div>
 
+        <div class="sections__item bg-wrap">
+            <img src="data/img/intro/bg.png" class="intro__bg">
+            <img src="data/img/intro/car3.png" class="img-responsive intro__car">
+        </div>
     </div>
 </section>

@@ -1,2 +1,110 @@
 .intro {
+    position: relative;
+    min-height: 165vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('data/img/ui/gradient-mix.png');
+    background-position: center;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    @media(--xm) {
+        min-height: 125vw;
+        background-size: contain;
+    }
+
+    @media(--sm) {
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 90rem;
+    }
+    
+    @media(--md) {
+        min-height: 70rem;
+    }
+
+    @media(--xl) {
+       height: 60vh;
+    }
+}
+
+
+.intro .grid-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    overflow: hidden;
+
+    @media(--md) {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+}
+
+.sections__item.content-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+
+    @media(--md) {
+        width: 35%;
+        overflow: hidden;
+    }
+}
+
+.intro .sections__subitem.heading-wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    z-index: var(--z-index-6);
+}
+
+.intro .sections__item.bg-wrap {
+    position: relative;
+    
+    @media(--md) {
+        width: 100%;
+        max-width: 150rem;
+        margin-right: -25%;
+    }
+}
+
+.intro__car {
+    position: relative;
+    display: block;
+    z-index: var(--z-index-6);
+}
+
+.intro__bg {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+    z-index: var(--z-index-7);
+}
+
+.intro .list-item {
+    font-size: 1.2em;
+    line-height: 1.4em;
+
+    @media(--md) {
+        font-size: 1.4em;
+    }
 }

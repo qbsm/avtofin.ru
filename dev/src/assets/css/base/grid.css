@@ -62,3 +62,11 @@ html {
     padding-right: 1.6rem;
   }
 }
+
+.grid-padding-left {
+  padding-left: 1rem;
+
+  @media(--md){
+    padding-left: calc((100vw - 140rem)/2);
+  }
+}

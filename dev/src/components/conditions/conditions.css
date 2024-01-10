@@ -8,6 +8,14 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 2rem;
+    padding: 4rem;
+    border-radius: 2rem;
+    box-shadow: var(--shadow-3);
+}
+
+.conditions .logo-wrap {
+    width: 18rem;
+    margin-bottom: 2rem;
 }
 
 .conditions ul {
@@ -24,4 +32,10 @@
 
 .conditions .giver {
     font-size: .8em;
+}
+
+.conditions .section__item.list-wrap .divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-3);
 }

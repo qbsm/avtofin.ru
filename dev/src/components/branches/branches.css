@@ -93,3 +93,9 @@
 .map__balloon__link:last-child {
     margin-bottom: 0;
 }
+
+#map {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}

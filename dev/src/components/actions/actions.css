@@ -5,47 +5,104 @@
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 2rem;
+    padding-bottom: .5rem;
     overflow-x: scroll;
 
     @media(--md) {
-        overflow-x: unset;
+        flex-wrap: wrap;
+        min-height: 40rem;
+        padding-bottom: 0;
+        overflow: hidden;
     }
 }
 
 .actions .card {
     position: relative;
-    width: 100%;
-    min-width: 25rem;
-    min-height: 400px;
+    width: 80vw;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     gap: 2rem;
-    padding: 4rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #f3f3f3;
+    flex-shrink: 0;
+    padding: 4rem 2rem;
     border-radius: 2rem;
+    background-color: hsla(0, 0%, 90%, .7);
+    overflow: hidden;
 
     @media(--md) {
         width: calc(50% - 2rem);
+        gap: 4rem;
+    }
+
+    @media(--lg) {
+        width: calc(33.33% - 2rem);
+    }
+}
+
+/*
+.actions .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background-color: hsla(0, 0%, 100%, .9);
+    filter: blur(10rem);
+    z-index: var(--z-index-5);
+
+}*/
+
+.actions .card__title-wrap {
+    position: relative;
+    text-transform: uppercase;
+    z-index: var(--z-index-4);
+
+    @media(--md) {
+        min-height: 8.5rem;
     }
 }
 
 .actions .card__title {
-    font-size: 1.6em;
+    display: inline-block;
+    font-size: 1.2em;
+    text-align: center;
+
+    @media(--md) {
+        font-size: 1.6em;
+    }
 }
 
 .actions .card__subtitle {
     font-size: 1.4em;
 }
 
+.actions .card__button-wrap {
+    position: relative;
+    z-index: var(--z-index-4);
+}
+
+.actions .card__bg-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    filter: blur(3rem);
+    background-color: hsla(0, 0%, 100%, .9);
+    z-index: var(--z-index-7);
+    overflow: hidden;
+    opacity: .25;
+}
+
 .actions .card__icon-wrap {
-    width: 20rem;
-    height: 20rem;
-    margin: 0 auto;
+    position: relative;
+    z-index: var(--z-index-5);
+
+    @media(--md) {
+        width: 22rem;
+        
+    }
 }

@@ -21,6 +21,12 @@
                 </div>
             </div>
             <div class="section__subitem branches-wrap">
+                <div class="card">
+                    <div class="card__item working-wrap">
+                        <span class="card__label">Время работы филиалов</span>
+                        <span class="card__value">Пн-Пт 09:00-20:00<br>Сб-Вс 09:00-19:00</span>
+                    </div>
+                </div>
                 {% for item in data.items %}
                 <div class="card">
                     <div class="card__item city-wrap">
@@ -32,10 +38,6 @@
                     <div class="card__item address-wrap">
                         <span class="card__label">Адрес</span>
                         <span class="card__value">{{ item.address | raw }}</span>
-                    </div>
-                    <div class="card__item working-wrap">
-                        <span class="card__label">Время работы</span>
-                        <span class="card__value">{{ item.working | raw }}</span>
                     </div>
                     <div class="card__item link-wrap">
                         <a href="tel:{{ item.phone.href }}" class="link link-a-b nowrap font-2-semibold card__phone">{{ item.phone.title | raw}}</a>

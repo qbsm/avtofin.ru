@@ -51,7 +51,8 @@
 }
 
 .mfp-ready.mfp-bg {
-  opacity: .8;
+  background: hsla(0, 0%, 7%, .75);
+  backdrop-filter: blur(1rem);
 }
 
 .mfp-removing {

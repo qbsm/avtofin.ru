@@ -6,12 +6,16 @@
             <div class="divider"></div>
         </div>
         <div class="section__item list-wrap">
+            <div class="logo-wrap">
+                <img src="{{ data.logo }}" class="img-responsive">
+            </div>
             <ul>
                 {% for item in data.items %}
                 <li>{{ item | raw }}</li>
                 {% endfor %}
             </ul>
             <span class="desc">{{ data.example | raw }}</span>
+            <div class="divider"></div>
             <span class="giver">{{ data.giver | raw }}</span>
         </div>
     </div>

@@ -109,3 +109,7 @@ rub,
     font-size: 1.4em;
   }
 }
+
+.uppercase {
+  text-transform: uppercase;
+}

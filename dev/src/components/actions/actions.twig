@@ -6,13 +6,21 @@
         </div>
         <div class="section__item cards-wrap">
             {% for item in data.items %}
-            <div class="card" style="background-image: url({{item.bg}});">
-                <span class="card__title font-2-medium" >{{ item.title | raw }}</span>
-                {% if item.subtitle %}
-                <span class="card__subtitle font-2-regular" >{{ item.subtitle | raw }}</span>
-                {% endif %}
-                <button class="button button-3 button-md button-rounded">{{ item.button | raw }}</button>
+            <div class="card">
+                <div class="card__title-wrap">
+                    <span class="card__title font-2-bold" >{{ item.title | raw }}</span>
+                    {% if item.subtitle %}
+                    <span class="card__subtitle font-2-regular" >{{ item.subtitle | raw }}</span>
+                    {% endif %}
+                </div>
                 <div class="card__icon-wrap">
+                    <img src="{{ item.icon}}" class="img-responsive">
+                </div>
+                <div class="card__button-wrap">
+                    <button class="button button-3 button-lg button-rounded js-show-modal" data-modal="#modal-1">{{ item.button | raw }}</button>
+                </div>
+                
+                <div class="card__bg-wrap">
                     <img src="{{ item.icon}}" class="img-responsive">
                 </div>
             </div>

@@ -9,7 +9,8 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#020307">
-  <title>{{ title }}</title>
+  <title>{{ title | raw }}</title>
+  <meta name="description" content="{{ description | raw }}">
   <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">

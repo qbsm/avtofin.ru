@@ -12,14 +12,14 @@
 }
 
 .header .section__item.logo-wrap {
-    width: 20rem;
+    width: 18rem;
 
     @media(--md) {
-        width: 30rem;
+        width: 26rem;
     }
 }
 
-.link-wrap-phone {
+.header .section__subitem.button-wrap {
     display: none;
 
     @media(--md) {
@@ -28,7 +28,11 @@
 }
 
 .header__link-phone {
-    font-size: 1.6em;
+    font-size: 1.4em;
+
+    @media(--md) {
+        font-size: 1.6em;
+    }
 }
 
 .header .section__item.info-wrap {
