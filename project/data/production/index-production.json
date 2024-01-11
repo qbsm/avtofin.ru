@@ -277,6 +277,9 @@
       "items": [
         {
           "city": "Ангарск",
+          "emailRecipients": [
+              "dev@ismart.pro"
+          ],
           "address": "74 квартал, дом 6, Ангарск",
           "location": "52.541160, 103.889417",
           "yandex": "https://yandex.ru/maps/-/CDqs4Eix",
@@ -288,6 +291,9 @@
         },
         {
           "city": "Великий Новгород",
+          "emailRecipients": [
+            "dev@ismart.pro"
+          ],
           "address": "ул. Нехинская, д. 55, Великий Новгород",
           "location": "58.522584, 31.234234",
           "yandex": "https://yandex.ru/maps/-/CDqs4MOs",
@@ -299,6 +305,9 @@
         },
         {
           "city": "Иркутск",
+          "emailRecipients": [
+            "dev@ismart.pro"
+          ],
           "address": "ул. Баррикад 32А/7, Иркутск",
           "location": "52.292507, 104.313880",
           "yandex": "https://yandex.ru/maps/-/CDqs4MPE",
@@ -310,6 +319,9 @@
         },
         {
           "city": "Калининград",
+          "emailRecipients": [
+            "dev@ismart.pro"
+          ],
           "address": "Советский пр. д.46а, Калининград",
           "location": "54.727541, 20.494084",
           "yandex": "https://yandex.ru/maps/-/CDqs4QIT",
@@ -321,6 +333,9 @@
         },
         {
           "city": "Орел",
+          "emailRecipients": [
+            "dev@ismart.pro"
+          ],
           "address": "ул. Комсомольская, д. 77А, Орел",
           "location": "52.952590, 36.062589",
           "yandex": "https://yandex.ru/maps/-/CDqs4Qmp",
@@ -332,6 +347,9 @@
         },
         {
           "city": "Петрозаводск",
+          "emailRecipients": [
+            "dev@ismart.pro"
+          ],
           "address": "ул. Гоголя, д. 29, Петрозаводск",
           "location": "61.780700, 34.353661",
           "yandex": "https://yandex.ru/maps/-/CDqs4QzB",
@@ -343,6 +361,9 @@
         },
         {
           "city": "Псков",
+          "emailRecipients": [
+            "dev@ismart.pro"
+          ],
           "address": "Юбилейная улица, 60/1, Псков",
           "location": "57.819025, 28.292395",
           "yandex": "https://yandex.ru/maps/-/CDqs4Qpn",
@@ -354,6 +375,9 @@
         },
         {
           "city": "Саранск",
+          "emailRecipients": [
+            "dev@ismart.pro"
+          ],
           "address": "пр-кт Ленина, д. 41, Саранск",
           "location": "54.194402, 45.188960",
           "yandex": "https://yandex.ru/maps/-/CDqs4UiW",
@@ -365,6 +389,9 @@
         },
         {
           "city": "Симферополь",
+          "emailRecipients": [
+            "dev@ismart.pro"
+          ],
           "address": "ул. Мемета Нузета, д. 10, Симферополь",
           "location": "44.937366, 34.040643",
           "yandex": "https://yandex.ru/maps/-/CDqs4UNx",
@@ -376,6 +403,9 @@
         },
         {
           "city": "Сыктывкар",
+          "emailRecipients": [
+            "dev@ismart.pro"
+          ],
           "address": "ул. Морозова, д. 87, Сыктывкар",
           "location": "61.653248, 50.795777",
           "yandex": "https://yandex.ru/maps/-/CDqs4Uz8",
@@ -387,6 +417,9 @@
         },
         {
           "city": "Тверь",
+          "emailRecipients": [
+            "dev@ismart.pro"
+          ],
           "address": "пр-т Ленина, д. 26А, Тверь",
           "location": "56.851067, 35.840857",
           "yandex": "https://yandex.ru/maps/-/CDqs4U8V",
@@ -398,6 +431,9 @@
         },
         {
           "city": "Улан-Удэ",
+          "emailRecipients": [
+            "dev@ismart.pro"
+          ],
           "address": "ул. Борсоева, д. 12, Улан-Удэ",
           "location": "51.842032, 107.576750",
           "yandex": "https://yandex.ru/maps/-/CDqs4YYH",
@@ -409,6 +445,9 @@
         },
         {
           "city": "Якутск",
+          "emailRecipients": [
+            "dev@ismart.pro"
+          ],
           "address": "ул. Лермонтова, д.62/2, к.3 (Территория Крестьянского рынка), Якутск",
           "location": "51.851457, 107.607481",
           "yandex": "https://yandex.ru/maps/-/CDqs4YKq",

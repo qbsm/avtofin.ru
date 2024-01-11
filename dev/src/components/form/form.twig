@@ -24,8 +24,11 @@
         </div>
 
         <div class="form__item select-wrap">
-            <select type="text" id="select" class="form__select" name="Селект">
-                <option value="Выберите филиал">Выберите филиал</option>
+            <select id="select" class="form__select" name="city" required>
+                <option value="">Выберите филиал</option>
+                {% for city in cities %}
+                <option value="{{ city }}">{{ city }}</option>
+                {% endfor %}
             </select>
         </div>
 

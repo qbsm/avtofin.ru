@@ -47,6 +47,12 @@ $indexData = getPageData('index');
 foreach ($indexData['globals'] ?? [] as $name => $value) {
     $data[$name] = $value;
 }
+foreach ($indexData['secondaryScreen'] ?? [] as $section) {
+  if (($section['name'] ?? '') == 'branches') {
+    $items = $section['items'] ?? [];
+    $data['cities'] = array_column($items, 'city');
+  }
+}
 
 $disclaimer = file_get_contents($config["data_dir"] . "/content/disclaimer.html");
 $manifest = readJSON($config["assets_dir"] ."/json/rev-manifest.json");
