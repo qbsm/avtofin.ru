@@ -162,7 +162,6 @@ input[type="range"] {
     align-items: center;
 }
 
-
 .calc .form__container {
     width: 100%;
     display: grid;
@@ -170,15 +169,16 @@ input[type="range"] {
     grid-template-areas:
       "input-name"
       "input-phone"
+      "select-wrap"
       "spinner-wrap"
       "agree-wrap";
     gap: .5rem;
   
-    @media (--sm) {
+    @media (--md) {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
-        "input-name input-phone spinner-wrap"
-        "agree-wrap agree-wrap agree-wrap";
+        "input-name input-phone select-wrap spinner-wrap"
+        "agree-wrap agree-wrap agree-wrap agree-wrap";
         gap: 1rem;
     }
   }

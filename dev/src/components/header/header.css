@@ -19,6 +19,14 @@
     }
 }
 
+ .header .section__item.desc-wrap {
+    display: none;
+
+    @media(--md) {
+        display: block;
+    }
+ }
+
 .header .section__subitem.button-wrap {
     display: none;
 

@@ -2,20 +2,27 @@
 }
 
 .section__item.list-wrap {
-    max-width: 75rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 2rem;
-    padding: 4rem;
+    gap: 3rem;
+    padding: 2rem 1rem;
     border-radius: 2rem;
     box-shadow: var(--shadow-3);
+
+    @media(--md) {
+        max-width: 100rem;
+        padding: 8rem;
+    }
 }
 
 .conditions .logo-wrap {
-    width: 18rem;
-    margin-bottom: 2rem;
+    width: 20rem;
+
+    @media(--md) {
+        margin-bottom: 3rem;
+    }
 }
 
 .conditions ul {
