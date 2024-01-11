@@ -71,12 +71,13 @@ export default () => {
           }
         })
 
-        myMap.options.set('maxAnimationZoomDifference', Infinity);
+        //myMap.options.set('maxAnimationZoomDifference', Infinity);
         $('.js-map-link').on('click', function() {
           const loc = $(this).data('location').split(',');
           myMap.setCenter(loc);
-          myMap.setZoom(10);
-          setTimeout(() => {  myMap.setZoom(16, {duration: 500}); }, 700);
+          //myMap.setZoom(10);
+          //setTimeout(() => {  myMap.setZoom(16, {duration: 500}); }, 700);
+          myMap.setZoom(16);
           return false;
         });
 
