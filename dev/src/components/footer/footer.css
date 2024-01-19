@@ -1,4 +1,5 @@
 .footer {
+    box-shadow: var(--shadow-3);
 }
 
 .footer .container {
@@ -48,6 +49,18 @@
     width: 100%;
     height: 1px;
     background-color: var(--color-3);
+}
+
+.footer .section__item.social-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer .section__subitem.telegram-wrap,
+.footer .section__subitem.vk-wrap {
+    width: 5rem;
 }
 
 .footer .section__item.nav-wrap {

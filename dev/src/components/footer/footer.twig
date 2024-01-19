@@ -14,13 +14,21 @@
                 </div>
             </div>
         </div>
+        <div class="section__item social-wrap">
+            <a class="section__subitem telegram-wrap link" href="https://t.me/autosaim" target="_blank">
+                <img src="data/img/ui/telegram-icon.svg?v=1">
+            </a>
+            <a class="section__subitem vk-wrap link" href="https://vk.com/club222119633" target="_blank">
+                <img src="data/img/ui/vk-icon.svg?v=1">
+            </a>
+        </div>
         <div class="section__item nav-wrap">
             <div class="section__subitem title-wrap">
                 <span class="font-1-semibold">Навигация</span>
             </div>
             {% for nav in nav %}
             <div class="section__subitem link-wrap">
-                <a href="{{ nav.href }}" class="link link-a-b {{ nav.class }}">{{ nav.title | raw }}</a>
+                <a href="{{ nav.href }}" data-href="{{ nav.href }}" class="link link-a-b {{ nav.class }}">{{ nav.title | raw }}</a>
             </div>
             {% endfor %}
         </div>
