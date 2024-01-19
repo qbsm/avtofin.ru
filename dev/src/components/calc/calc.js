@@ -14,7 +14,7 @@ export default () => {
         $('.js-months-input').val(months);
         $('.js-months-label').html(months);
 
-        const payment = Math.round((amount + Math.round(amount*(rate*30/100)*months))/months);
+        const payment = Math.round(amount * rate/100 * months * 30);
         const paymentVal = String(payment).replace(/(.)(?=(\d{3})+$)/g,'$1 ')
         $('.js-payment-label').html(paymentVal);
     }

@@ -8,7 +8,7 @@
             <div class="calc">
                 <div class="calc__item result-wrap">
                     <div class="calc__subitem payment-wrap">
-                        <span class="payment__label label font-1-medium">Ежемесячный платеж</span>
+                        <span class="payment__label label font-1-medium">Начисленные проценты</span>
                         <span class="payment__value nobr value font-1-semibold"><span class="js-payment-label">-</span>&#8201;₽</span>
                     </div>
                     <div class="divider"></div>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="calc__item form-wrap">
-                    {% include "parts/form.twig" with 
+                    {% include "parts/form.twig" with
                         {
                             button: {
                                 class: "button-3 button-rounded",
