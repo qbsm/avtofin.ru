@@ -61,17 +61,15 @@ export default () => {
         });
         myMap.behaviors.disable('scrollZoom');
 
-        /* Trouble block */
         $window.resize( function handleResizeWindow(e) {
           if ($window.width() < 992) {
             myMap.setCenter(centerSM);
-            myMap.setZoom(centerSM);
+            myMap.setZoom(zoomSM);
           } else {
             myMap.setCenter(center);
-              myMap.setZoom(zoom);
+            myMap.setZoom(zoom);
           }
         })
-        /* /Trouble block */
 
         //myMap.options.set('maxAnimationZoomDifference', Infinity);
         $('.js-map-link').on('click', function() {
