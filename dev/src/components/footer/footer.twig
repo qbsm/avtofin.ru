@@ -36,7 +36,7 @@
             <a href="https://mkk-bvs.ru" target="_blank" class="link link-a-b font-1-medium">Юридическая информация <span class="mdi mdi-chevron-right"></span></a>
         </div>
         <div class="section__item info-wrap">
-            <span class="footer__copyright font-1-semibold">{{ data.copyright | raw }}</span>
+            <span class="footer__copyright font-1-semibold">{{ data.copyright | raw }}{{ 'now' | date('Y') }}</span>
             <span class="footer__disclaimer">{{ data.disclaimer | raw }}</span>
             <span class="footer__owner">{{ data.owner | raw }}, {{ phone.title }}</span>
         </div>

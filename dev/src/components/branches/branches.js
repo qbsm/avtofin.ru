@@ -34,6 +34,9 @@ export default () => {
           zoom: currentZoom,
           center: currentCenter,
           controls: ["zoomControl"],
+        },
+        {
+          suppressMapOpenBlock: true,
         });
 
         $balloons.each((indexBalloon, balloon) => {
@@ -57,7 +60,6 @@ export default () => {
           );
 
           myMap.geoObjects.add(placemark);
-          myMap.panes.get('ground').getElement().style.filter = 'grayscale(100%)';
         });
         myMap.behaviors.disable('scrollZoom');
 
