@@ -63,15 +63,32 @@ export default () => {
         });
         myMap.behaviors.disable('scrollZoom');
 
-        $window.resize( function handleResizeWindow(e) {
-          if ($window.width() < 992) {
-            myMap.setCenter(centerSM);
-            myMap.setZoom(zoomSM);
-          } else {
-            myMap.setCenter(center);
-            myMap.setZoom(zoom);
+      // Store the window width
+      var windowWidth = $(window).width();
+
+      // Resize Event
+      $(window).resize(function(){
+
+          // Check window width has actually changed and it's not just iOS triggering a resize event on scroll
+          if ($(window).width() != windowWidth) {
+
+              // Update the window width for next time
+              windowWidth = $(window).width();
+
+              if (windowWidth< 992) {
+                myMap.setCenter(centerSM);
+                myMap.setZoom(zoomSM);
+              } else {
+                myMap.setCenter(center);
+                myMap.setZoom(zoom);
+              }
+
           }
-        })
+
+          // Otherwise do nothing
+
+      });
+
 
         //myMap.options.set('maxAnimationZoomDifference', Infinity);
         $('.js-map-link').on('click', function() {
