@@ -7,6 +7,6 @@ return [
   "assets_dir" => __DIR__ . "/assets",
   "mail" => [
     "templates" => __DIR__ . "/templates/emails",
-    "addressCC" => ["leads@ismart.pro"],
+    "addressCC" => [""],
   ]
 ];
