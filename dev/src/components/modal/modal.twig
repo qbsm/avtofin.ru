@@ -3,9 +3,11 @@
     <div class="modal__content">
       <h5 class="modal__title">Отправьте заявку и мы перезвоним</h5>
       {% include "parts/form.twig" with {
+        name: "modalForm",
+        id: "modalForm",
         button: {
           class: "button-3",
-          text: "Отправить заявку"
+          text: "Отправить заявку",
         }
       }%}
     </div>

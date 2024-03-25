@@ -4,6 +4,10 @@ export default () => {
   $(document).on('click', '.js-show-modal', function handleClickTriggerModal(e) {
     e.preventDefault();
 
+    if (typeof(ym)==='function') {
+      ym(93699016,'reachGoal','openForm');
+    }
+
     const $this = $(this);
     const id = $this.attr('data-modal');
 

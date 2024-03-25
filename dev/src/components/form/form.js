@@ -15,6 +15,10 @@ export default (opt) => {
   });
 
   function sendForm(data, cb){
+    if (typeof(ym)==='function') {
+      ym(93699016,'reachGoal','modalForm');
+    }
+
     $.ajax({
       type: "POST",
       url: 'form.php',
@@ -23,6 +27,11 @@ export default (opt) => {
         cb(res);
       }
     })
+  }
+
+  function clearForm(){
+    $('input[name="Имя"]').val('');
+    $('input[name="Телефон"]').val('');
   }
 
   $('.js-form').on('submit', function handleSubmitForm(e) {
@@ -35,13 +44,18 @@ export default (opt) => {
 
     $button.removeClass('js-success');
     $button.addClass('js-sending');
+    $button.attr('disabled', true);
 
     sendForm(data, () => {
       setTimeout(() => {
         $button.removeClass('js-sending');
         $button.addClass('js-success');
+        clearForm();
       }, 1000);
 
+      setTimeout(() => {
+        $button.attr('disabled', false);
+      }, 3000000);
     })
 
     return false;
