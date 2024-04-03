@@ -42,6 +42,8 @@ export default (opt) => {
 
     data += `&url=${document.location.href}`;
 
+    if(!$(this).find('input[name=Телефон]').val()) return false;
+
     $button.removeClass('js-success');
     $button.addClass('js-sending');
     $button.attr('disabled', true);
