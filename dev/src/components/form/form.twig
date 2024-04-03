@@ -4,61 +4,68 @@
   id="{{id}}"
 >
     <div class="form__container">
+        <div class="form__part1 js-form-part1">
+            <div class="form__item input-wrap input-name">
+                <label class="form__label" for="name">Ваше имя</label>
+                <input type="text" id="name" class="form__input  js-form-name" placeholder="Введите имя" name="Имя" required>
+                <span class="hidden js-form-name-error">Укажите имя. Допустимы только русские и английские буквы и пробел</span>
+            </div>
 
-        <div class="form__item input-wrap input-name">
-            <label class="form__label" for="name">Ваше имя</label>
-            <input type="text" id="name" class="form__input" placeholder="Введите имя" name="Имя">
-        </div>
-
-        <div class="form__item input-wrap input-phone js-field-container">
-            <label class="form__label" for="phone">Ваш телефон<span class="form__asterisk">*</span></label>
-            <input
-            type="tel"
-            class="form__input"
-            id="phone"
-            placeholder="+7 (___) ___-__-__"
-            name="Телефон"
-            pattern="[+]?[7][ ]?[(]?\d{3}[)]?[ ]?\d{3}[-]?\d{2}[-]?\d{2}"
-            required
-            >
-        </div>
-
-        <div class="form__item select-wrap">
-            <select id="select" class="form__select" name="city" required>
-                <option value="">Выберите филиал</option>
-                {% for city in cities %}
-                <option value="{{ city }}">{{ city }}</option>
-                {% endfor %}
-            </select>
-        </div>
-
-        <div class="form__item textarea-wrap">
-            <label class="form__label" for="message">Краткое описание вопроса</label>
-            <textarea type="text" id="message" class="form__textarea" placeholder="Введите текст" name="Текстареа"></textarea>
-        </div>
-
-        <div class="form__item spinner-wrap">
-            <button type="submit" name="submit" class="form__submit button button-rounded {{ button.class }} js-send CKFormTrigger">
-                <span class="form__submit-title">{{button.text}}</span>
-                <span class="form__submit-loader spinner">
-                    <span class="bounce1"></span>
-                    <span class="bounce2"></span>
-                    <span class="bounce3"></span>
-                </span>
-                <span class="form__submit-success">
-                    <i class="fa fa-thumbs-o-up form__submit-icon" aria-hidden="true"></i>
-                    Успешно отправлена
-                </span>
+            <div class="form__item input-wrap input-phone js-field-container">
+                <label class="form__label" for="phone">Ваш телефон<span class="form__asterisk">*</span></label>
+                <input
+                type="tel"
+                class="form__input js-form-phone"
+                id="phone"
+                placeholder="+7 (___) ___-__-__"
+                name="Телефон"
+                pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}"
+                required
+                >
+            </div>
+            <span class="hidden js-form-phone-error">Укажите телефон</span>
+            <button type="button" class="form__submit button button-rounded {{ button.class }} js-form-next">
+                Далее
             </button>
         </div>
+        <div class="form__part2 js-form-part2 hidden">
+            <div class="form__item select-wrap">
+                <select id="select" class="form__select js-form-city" name="city" required>
+                    <option value="">Выберите филиал</option>
+                    {% for city in cities %}
+                    <option value="{{ city }}">{{ city }}</option>
+                    {% endfor %}
+                    <option value="Другое">Другое</option>
+                </select>
+            </div>
 
-        <div class="form__item agree-wrap">
-            <span class="form__agree">
-                Нажав на кнопку "Отправить заявку", я даю согласие на обработку моих персональных данных и получение рекламных предложений. С <a class="link link-1"
-                    href="{{root_path}}/assets/agree.pdf" target="_blank" class="">условиями</a> обработки персональных данных и получения предложений - ознакомлен и согласен.
-            </span>
+            <div class="form__item textarea-wrap">
+                <label class="form__label" for="message">Краткое описание вопроса</label>
+                <textarea type="text" id="message" class="form__textarea" placeholder="Введите текст" name="Текстареа"></textarea>
+            </div>
+
+            <div class="form__item spinner-wrap">
+                <button type="submit" name="submit" class="form__submit button button-rounded {{ button.class }} js-send CKFormTrigger">
+                    <span class="form__submit-title">{{button.text}}</span>
+                    <span class="form__submit-loader spinner">
+                        <span class="bounce1"></span>
+                        <span class="bounce2"></span>
+                        <span class="bounce3"></span>
+                    </span>
+                    <span class="form__submit-success">
+                        <i class="fa fa-thumbs-o-up form__submit-icon" aria-hidden="true"></i>
+                        Успешно отправлена
+                    </span>
+                </button>
+            </div>
+
+            <div class="form__item agree-wrap">
+                <span class="form__agree">
+                    Нажав на кнопку "Отправить заявку", я даю согласие на обработку моих персональных данных и получение рекламных предложений. С <a class="link link-1"
+                        href="{{root_path}}/assets/agree.pdf" target="_blank" class="">условиями</a> обработки персональных данных и получения предложений - ознакомлен и согласен.
+                </span>
+            </div>
         </div>
-
         <div class="form__item hidden-wrap">
             <input type="hidden" name="subject" value="Оставлена заявка">
         </div>
