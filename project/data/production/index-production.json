@@ -301,6 +301,21 @@
           }
         },
         {
+          "city": "Братск",
+          "emailRecipients": [
+            "bratsk-avto@autozaim.org",
+            "autozaimorg@yandex.ru"
+          ],
+          "address": "ул. Гиндина, д.4/2, Братск",
+          "location": "56.313339, 101.749010",
+          "yandex": "https://yandex.ru/maps/-/CDRX7Lmi",
+          "working": "Пн-Пт 09:00-20:00<br>Сб-Вс 09:00-19:00",
+          "phone": {
+            "href": "+79501395130",
+            "title": "+7 (950) 139-51-30"
+          }
+        },
+        {
           "city": "Великий Новгород",
           "emailRecipients": [
             "vnovgorod@autozaim.org",
