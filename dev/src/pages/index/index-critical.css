@@ -17,7 +17,7 @@
 .secondary-screen {
   opacity: 0;
   transition: all ease-out .3s;
-  background-image: url(../image/1.jpg);
+  background-image: url(../data/img/ui/1.png);
 }
 
 .modal {

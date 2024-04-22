@@ -94,7 +94,7 @@ rub,
 
 .heading {
   font-size: 2em;
-  font-family: var(--font-2-medium);
+  font-family: var(--font-2-regular);
 
   @media(--md) {
     font-size: 3em;
@@ -103,7 +103,7 @@ rub,
 
 .subheading {
   font-size: 1.2em;
-  font-family: var(--font-2-medium);
+  font-family: var(--font-2-regular);
 
   @media(--md) {
     font-size: 1.4em;

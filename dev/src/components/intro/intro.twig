@@ -2,7 +2,7 @@
     <div class="grid-padding-left grid-container">
         <div class="sections__item content-wrap">
             <div class="sections__subitem heading-wrap">
-                <span class="heading font-2-medium">{{ data.heading | raw }}{{ inCity }}</span>
+                <h1 class="heading font-2-medium">{{ data.heading | raw }}{{ inCity }}</h1>
                 <span class="subheading uppercase font-2-medium">{{ data.subheading | raw }}</span>
             </div>
             <ui class="list">
@@ -12,7 +12,6 @@
             </ui>
             <button class="button button-3 button-lg button-rounded js-show-modal" data-modal="#modal-1">{{ data.button | raw }}</button>
         </div>
-
         <div class="sections__item bg-wrap">
             <img src="data/img/intro/bg.png?v=1" class="intro__bg">
             <img src="data/img/intro/car1.png?v=2" class="img-responsive intro__car js-img-change" data-current="1" data-last="3" data-delay="3000">
