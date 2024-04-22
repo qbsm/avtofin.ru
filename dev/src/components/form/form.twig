@@ -24,21 +24,24 @@
                 >
             </div>
             <span class="hidden js-form-phone-error">Укажите телефон</span>
-            <button type="button" class="form__submit button button-rounded {{ button.class }} js-form-next">
+            <!--button type="button" class="form__submit button button-rounded {{ button.class }} js-form-next">
                 Далее
             </button>
         </div>
-        <div class="form__part2 js-form-part2 hidden">
+        <div class="form__part2 js-form-part2 hidden"-->
+            {% if city %}
+            <input type="hidden" name="city" value="{{ city }}">
+            {% else %}
             <div class="form__item select-wrap">
                 <select id="select" class="form__select js-form-city" name="city" required>
-                    <option value="">Выберите филиал</option>
+                    <option value="Не выбрано">Выберите филиал</option>
                     {% for city in cities %}
                     <option value="{{ city }}">{{ city }}</option>
                     {% endfor %}
                     <option value="Другое">Другое</option>
                 </select>
             </div>
-
+            {% endif %}
             <div class="form__item textarea-wrap">
                 <label class="form__label" for="message">Краткое описание вопроса</label>
                 <textarea type="text" id="message" class="form__textarea" placeholder="Введите текст" name="Текстареа"></textarea>

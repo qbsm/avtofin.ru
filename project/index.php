@@ -41,9 +41,13 @@ $page_name =
     )
   )[1];
 $page_name = $page_name ? $page_name : "index";
-$data = getPageData($page_name);
+//$data = getPageData($page_name);
 
 $indexData = getPageData('index');
+$data = $indexData;
+$data['page'] = 'index';
+$data['city'] = '';
+$data['inName'] = '';
 foreach ($indexData['globals'] ?? [] as $name => $value) {
     $data[$name] = $value;
 }
@@ -51,7 +55,22 @@ foreach ($indexData['secondaryScreen'] ?? [] as $section) {
   if (($section['name'] ?? '') == 'branches') {
     $items = $section['items'] ?? [];
     $data['cities'] = array_column($items, 'city');
+    foreach ($items as $item) {
+      if($page_name == $item['slug']) {
+        $data['citySlug'] = $item['slug'];
+        $data['city'] = $item['city'];
+        $data['inCity'] = ' в '.$item['inName'];
+      }
+    }
+    if ($data['city']) {
+      $page_name = 'index';
+    }
   }
+}
+
+if ($page_name != 'index') {
+  http_response_code(404);
+  exit();
 }
 
 $disclaimer = file_get_contents($config["data_dir"] . "/content/disclaimer.html");

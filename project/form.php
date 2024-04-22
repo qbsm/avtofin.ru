@@ -23,7 +23,7 @@ if (array_key_exists('city', $data)) {
   $city = $data['city'];
   $data['Филиал'] = $city;
   unset($data['city']);
-  if ($city == 'Другое') {
+  if (in_array($city, ['Другое', 'Не выбрано'])) {
     $config['mail']['address'] = ['autozaimorg@yandex.ru'];
   } else {
     $indexData = json_decode(file_get_contents('data/production/index-production.json'), true);

@@ -1,7 +1,7 @@
 {
   "page": "index",
-  "title": "АВТОЗАЙМ: Деньги под залог ПТС автомобиля - Оформить займ под ПТС.",
-  "description": "АВТОЗАЙМ: Займы под залог ПТС любого вида транспорта. Без справок и поручителей. С любой кредитной историей. За 30 минут. Звоните.",
+  "title": "АВТОЗАЙМ: Деньги под залог ПТС автомобиля %city% | Автоломбард",
+  "description": "Оформите займ под залог ПТС автомобиля прямо сейчас%inCity%. Решение сложных финансовых проблем стало проще с нашим Автоломбардом. Получите быстрый доступ к деньгам, оставаясь водителем. Надежно и удобно. ПТС у нас - авто у Вас! | Autosaim.ru",
   "emailRecipients": [
   ],
   "globals": {
@@ -287,6 +287,8 @@
       "items": [
         {
           "city": "Ангарск",
+          "slug": "angarsk",
+          "inName": "Ангарске",
           "emailRecipients": [
             "angarsk@autozaim.org",
             "autozaimorg@yandex.ru"
@@ -302,6 +304,8 @@
         },
         {
           "city": "Братск",
+          "slug": "bratsk",
+          "inName": "Братске",
           "emailRecipients": [
             "bratsk-avto@autozaim.org",
             "autozaimorg@yandex.ru"
@@ -317,6 +321,8 @@
         },
         {
           "city": "Великий Новгород",
+          "slug": "v-novgorod",
+          "inName": "Великом Новгороде",
           "emailRecipients": [
             "vnovgorod@autozaim.org",
             "autozaimorg@yandex.ru"
@@ -332,6 +338,8 @@
         },
         {
           "city": "Иркутск I",
+          "slug": "irkutsk",
+          "inName": "Иркутске",
           "emailRecipients": [
             "irkutsk.1@autozaim.org",
             "autozaimorg@yandex.ru"
@@ -347,6 +355,8 @@
         },
         {
           "city": "Иркутск II",
+          "slug": "irkutsk",
+          "inName": "Иркутске",
           "emailRecipients": [
             "irkutskauto-2@mail.ru",
             "autozaimorg@yandex.ru"
@@ -362,6 +372,8 @@
         },
         {
           "city": "Калининград",
+          "slug": "kaliningrad",
+          "inName": "Калининграде",
           "emailRecipients": [
             "kaliningrad.autozaim@mail.ru",
             "autozaimorg@yandex.ru"
@@ -377,6 +389,8 @@
         },
         {
           "city": "Орел",
+          "slug": "orel",
+          "inName": "Орле",
           "emailRecipients": [
             "orel@autozaim.org",
             "autozaimorg@yandex.ru"
@@ -392,6 +406,8 @@
         },
         {
           "city": "Петрозаводск",
+          "slug": "petrozavodsk",
+          "inName": "Петрозаводске",
           "emailRecipients": [
             "petrozavodsk@autozaim.org",
             "autozaimorg@yandex.ru"
@@ -407,6 +423,8 @@
         },
         {
           "city": "Псков",
+          "slug": "pskov",
+          "inName": "Пскове",
           "emailRecipients": [
             "pskov@autozaim.org",
             "autozaimorg@yandex.ru"
@@ -422,6 +440,8 @@
         },
         {
           "city": "Саранск",
+          "slug": "saransk",
+          "inName": "Саранске",
           "emailRecipients": [
             "saranskautofinans@mail.ru",
             "autozaimorg@yandex.ru"
@@ -437,6 +457,8 @@
         },
         {
           "city": "Симферополь",
+          "slug": "simferopol",
+          "inName": "Симферополе",
           "emailRecipients": [
             "simferopol@autofin.org",
             "autozaimorg@yandex.ru"
@@ -452,6 +474,8 @@
         },
         {
           "city": "Сыктывкар",
+          "slug": "syktyvkar",
+          "inName": "Сыктывкаре",
           "emailRecipients": [
             "syktyvkar@autozaim.org",
             "autozaimorg@yandex.ru"
@@ -467,6 +491,8 @@
         },
         {
           "city": "Тверь",
+          "slug": "tver",
+          "inName": "Твери",
           "emailRecipients": [
             "tver.autozaim@mail.ru",
             "autozaimorg@yandex.ru"
@@ -482,6 +508,8 @@
         },
         {
           "city": "Улан-Удэ",
+          "slug": "ulan-ude",
+          "inName": "Улан-Уде",
           "emailRecipients": [
             "ylanydeavtozaim@gmail.com",
             "autozaimorg@yandex.ru"
@@ -497,6 +525,8 @@
         },
         {
           "city": "Якутск",
+          "slug": "yakutsk",
+          "inName": "Якутске",
           "emailRecipients": [
             "yakutskauto@mail.ru",
             "autozaimorg@yandex.ru"
