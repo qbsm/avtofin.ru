@@ -110,3 +110,7 @@
 .modal__text a {
   color: inherit;
 }
+
+.modal .form-city .form__item.select-wrap {
+  display: none;
+}

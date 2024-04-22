@@ -98,7 +98,9 @@
 }
 
 .intro .heading {
-    text-align: left;
+    @media(--md) {
+        text-align: left;
+    }
 }
 
 .intro .sections__item.bg-wrap {

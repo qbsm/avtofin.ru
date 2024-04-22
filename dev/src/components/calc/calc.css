@@ -182,3 +182,23 @@ input[type="range"] {
         gap: 1rem;
     }
   }
+
+  .calc .form-city .form__container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "input-name"
+      "input-phone"
+      "spinner-wrap"
+      "agree-wrap";
+    gap: .5rem;
+  
+    @media (--md) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "input-name input-phone spinner-wrap"
+        "agree-wrap agree-wrap agree-wrap";
+        gap: 1rem;
+    }
+  }

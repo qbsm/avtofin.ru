@@ -1,16 +1,14 @@
 <form
-  class="form js-form {{mod}}"
+  class="form js-form {{mod}} {% if city %}form-city{% endif %}"
   name="{{name}}"
   id="{{id}}"
 >
     <div class="form__container">
-        <div class="form__part1 js-form-part1">
             <div class="form__item input-wrap input-name">
                 <label class="form__label" for="name">Ваше имя</label>
                 <input type="text" id="name" class="form__input  js-form-name" placeholder="Введите имя" name="Имя" required>
                 <span class="hidden js-form-name-error">Укажите имя. Допустимы только русские и английские буквы и пробел</span>
             </div>
-
             <div class="form__item input-wrap input-phone js-field-container">
                 <label class="form__label" for="phone">Ваш телефон<span class="form__asterisk">*</span></label>
                 <input
@@ -22,13 +20,9 @@
                 pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}"
                 required
                 >
+                <span class="hidden js-form-phone-error">Укажите телефон</span>
             </div>
-            <span class="hidden js-form-phone-error">Укажите телефон</span>
-            <!--button type="button" class="form__submit button button-rounded {{ button.class }} js-form-next">
-                Далее
-            </button>
-        </div>
-        <div class="form__part2 js-form-part2 hidden"-->
+        
             {% if city %}
             <input type="hidden" name="city" value="{{ city }}">
             {% else %}
@@ -68,10 +62,8 @@
                         href="{{root_path}}/data/content/agree.pdf" target="_blank" class="">условиями</a> обработки персональных данных и получения предложений - ознакомлен и согласен.
                 </span>
             </div>
-        </div>
         <div class="form__item hidden-wrap">
             <input type="hidden" name="subject" value="Оставлена заявка">
         </div>
-
     </div>
 </form>

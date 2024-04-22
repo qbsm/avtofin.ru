@@ -88,6 +88,36 @@
       ]
     },
     {
+      "name": "advantages",
+      "visible": true,
+      "heading": "Наши преимущества",
+      "items": [
+        {
+          "icon": "data/img/advantages/1.svg",
+          "title": "Индивидуальный подход к каждому клиенту"
+        },
+        {
+          "icon": "data/img/advantages/2.svg",
+          "title": "100% одобрение даже с плохой кредитной историей"
+        },
+        {
+          "icon": "data/img/advantages/3.svg",
+          "title": "Нет ограничений по сроку договора"
+        },
+        {
+          "icon": "data/img/advantages/4.svg",
+          "title": "Отсутствуют ограничения по сумме займа"
+        },{
+          "icon": "data/img/advantages/5.svg",
+          "title": "Заем под кредитный и залоговый транспорт"
+        },
+        {
+          "icon": "data/img/advantages/6.svg",
+          "title": "Низкая процентная ставка"
+        }
+      ]
+    },
+    {
       "name": "calc",
       "visible": true,
       "heading": "Рассчитайте сумму платежа",
@@ -138,36 +168,6 @@
     }
   ],
   "secondaryScreen": [
-    {
-      "name": "advantages",
-      "visible": true,
-      "heading": "Наши преимущества",
-      "items": [
-        {
-          "icon": "data/img/advantages/1.svg",
-          "title": "Индивидуальный подход к каждому клиенту"
-        },
-        {
-          "icon": "data/img/advantages/2.svg",
-          "title": "100% одобрение даже с плохой кредитной историей"
-        },
-        {
-          "icon": "data/img/advantages/3.svg",
-          "title": "Нет ограничений по сроку договора"
-        },
-        {
-          "icon": "data/img/advantages/4.svg",
-          "title": "Отсутствуют ограничения по сумме займа"
-        },{
-          "icon": "data/img/advantages/5.svg",
-          "title": "Заем под кредитный и залоговый транспорт"
-        },
-        {
-          "icon": "data/img/advantages/6.svg",
-          "title": "Низкая процентная ставка"
-        }
-      ]
-    },
     {
       "name": "reviews",
       "visible": true,
@@ -337,7 +337,7 @@
           }
         },
         {
-          "city": "Иркутск I",
+          "city": "Иркутск",  
           "slug": "irkutsk",
           "inName": "Иркутске",
           "emailRecipients": [
@@ -351,23 +351,6 @@
           "phone": {
             "href": "+73952956363",
             "title": "+7 (3952) 95-63-63"
-          }
-        },
-        {
-          "city": "Иркутск II",
-          "slug": "irkutsk",
-          "inName": "Иркутске",
-          "emailRecipients": [
-            "irkutskauto-2@mail.ru",
-            "autozaimorg@yandex.ru"
-          ],
-          "address": "ул. Розы Люксембург, 217а/7, Ново-Ленино, Иркутск",
-          "location": "52.350529, 104.174990",
-          "yandex": "https://yandex.ru/maps/-/CDuDUFzM",
-          "working": "Пн-Пт 09:00-20:00<br>Сб-Вс 09:00-19:00",
-          "phone": {
-            "href": "+79149255656",
-            "title": "+7 (914) 925-56-56"
           }
         },
         {
@@ -509,7 +492,7 @@
         {
           "city": "Улан-Удэ",
           "slug": "ulan-ude",
-          "inName": "Улан-Уде",
+          "inName": "Улан-Удэ",
           "emailRecipients": [
             "ylanydeavtozaim@gmail.com",
             "autozaimorg@yandex.ru"
@@ -521,6 +504,23 @@
           "phone": {
             "href": "+73012606454",
             "title": "+7 (3012) 60-64-54"
+          }
+        },
+        {
+          "city": "Усть-Илимск",
+          "slug": "ust-ilimsk",
+          "inName": "Усть-Илимске",
+          "emailRecipients": [
+            "u-ilimsk@autozaim.org",
+            "autozaimorg@yandex.ru"
+          ],
+          "address": "проспект Мира, д. 11, Усть-Илимск",
+          "location": "57.953713,102.737333",
+          "yandex": "https://yandex.ru/maps/-/CDVfQI0h",
+          "working": "Пн-Пт 09:00-20:00<br>Сб-Вс 09:00-19:00",
+          "phone": {
+            "href": "+79041598734",
+            "title": "+7 (904) 159-87-34"
           }
         },
         {
