@@ -3,6 +3,7 @@
 
     @media(--md) {
         display: block;
+        margin-top: 10rem;
     }
 }
 

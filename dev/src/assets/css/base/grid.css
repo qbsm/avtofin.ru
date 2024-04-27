@@ -66,7 +66,15 @@ html {
 .grid-padding-left {
   padding-left: 1rem;
 
+  @media(--sm){
+    padding-left: 1.6rem;
+  }
+
   @media(--md){
+    padding-left: calc((100vw - 120rem)/2);
+  }
+
+  @media(--xl){
     padding-left: calc((100vw - 140rem)/2);
   }
 }

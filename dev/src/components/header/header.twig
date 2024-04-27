@@ -3,17 +3,30 @@
         <div class="section__item logo-wrap">
             <img src="{{ data.logo }}" class="img-responsive">
         </div>
-        <div class="section__item desc-wrap">
-            <span class="font-1-medium">Федеральная сеть салонов автозайма{{ inCity }}</span>
+        <div class="section__item working-wrap">
+            <span class="card__label">Единое время работы филиалов</span><br>
+            <span class="card__value"><span class="font-1-semibold">Пн-Пт</span> 09:00-20:00&nbsp;&nbsp;<span class="font-1-semibold">Сб-Вс</span> 09:00-19:00</span>
         </div>
-        <div class="section__item callback-wrap">
-            <div class="section__subitem link-wrap link-wrap-phone">
+        <div class="section__item phone-wrap">
+            <div class="section__subitem link-wrap link-phone">
                 <a href="tel:{{ phone.href }}" class="link link-a-b font-2-semibold header__link-phone">{{ phone. title}}</a>
             </div>
-            <div class="section__subitem button-wrap">
-                <button class="button button-3 button-circle js-show-modal" data-modal="#modal-1">
-                    <span class="mdi mdi-phone-outgoing"></span>
-                </button>
+        </div>
+        <div class="section__item messengers-wrap">
+            <div class="section__subitem messenger-wrap callback-wrap js-show-modal" data-modal="#modal-1">
+                <a href="#" target="_blank" class="link messenger-link">
+                    <img src="{{data.phone.icon}}" class="img-responsive">
+                </a>
+            </div>
+            <div class="section__subitem messenger-wrap">
+                <a href="{{data.telegram.href}}" target="_blank" class="link messenger-link">
+                    <img src="{{data.telegram.icon}}" class="img-responsive">
+                </a>
+            </div>
+            <div class="section__subitem messenger-wrap">
+                <a href="{{data.whatsapp.href}}" target="_blank" class="link messenger-link">
+                    <img src="{{data.whatsapp.icon}}" class="img-responsive">
+                </a>
             </div>
         </div>
     </div>
