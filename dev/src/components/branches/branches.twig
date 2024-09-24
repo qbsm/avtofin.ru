@@ -8,7 +8,7 @@
             <div class="section__subitem map-placemarks-wrap js-map" data-center="{{data.center}}" data-centerSM="{{data.centerSM}}" data-zoom="{{data.zoom}}" data-zoomSM="{{data.zoomSM}}" data-container-id="map">
                 <div class="section__inner placemarks-wrap">
                     <div class="placemark hidden">
-                        {% for item in data.items %}
+                        {% for item in branches %}
                           <div class="map__balloon" data-location="{{item.location}}" data-image-size="64,90" data-image-offset="-32,-90" data-icon="assets/img/brand/placemark.png?v=3">
                             <a href="{{item.yandex}}" class="map__balloon__link" target="blank" rel="noopener noreferrer">
                               <img src="{{root}}data/img/map/yandex.svg" class="img-responsive">
@@ -27,7 +27,7 @@
                         <span class="card__value"><span class="font-1-semibold">Пн-Пт</span> 09:00-20:00<br><span class="font-1-semibold">Сб-Вс</span> 09:00-19:00</span>
                     </div>
                 </div>
-                {% for item in data.items %}
+                {% for item in branches %}
                 <div class="card">
                     <div class="card__item city-wrap">
                         <span class="card__title font-2-medium">{{ item.city | raw }}
