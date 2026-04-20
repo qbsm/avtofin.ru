@@ -332,7 +332,7 @@
     {
       "name": "header",
       "visible": true,
-      "logo": "data/img/ui/autosaim-logo.svg?v=1",
+      "logo": "data/img/ui/brand-logo-color-2.svg?v=1",
       "phone": {
         "icon": "data/img/ui/phone.svg?v=1"
       },
@@ -559,7 +559,7 @@
       "visible": true,
       "heading": "Условия предоставления займов",
       "subheading": "C обеспечением в виде залога транспортного средства",
-      "logo": "data/img/ui/autosaim-logo.svg",
+      "logo": "data/img/ui/brand-logo-color-2.svg",
       "items": [
         "От <span class='font-1-semibold'>1 000 ₽</span> до <span class='font-1-semibold'>500 000 ₽</span>. Деньги в день оформления договора займа.",
         "Процент за пользование деньгами до <span class='font-1-semibold'>88.081 %</span> годовых.",
@@ -585,7 +585,7 @@
     {
       "name": "footer",
       "visible": true,
-      "logo": "data/img/ui/autosaim-logo.svg",
+      "logo": "data/img/ui/brand-logo-color-2.svg",
       "copyright": "Все права защищены @ ООО МКК «БВС» 2015-",
       "owner": "Права на сайт принадлежат ООО МКК «БВС» (ИНН 3808276358, ОГРН 1223800004097). Иркутская область, г. Иркутск, мкр. Крылатый, д. 13.",
       "disclaimer": "Представленная информация не является публичной офертой, определяемой положениями ст. 437 ГК Российской Федерации и носит информационный характер."
