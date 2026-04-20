@@ -51,21 +51,17 @@ $data['inName'] = '';
 foreach ($indexData['globals'] ?? [] as $name => $value) {
     $data[$name] = $value;
 }
-foreach ($indexData['secondaryScreen'] ?? [] as $section) {
-  if (($section['name'] ?? '') == 'branches') {
-    $items = $section['items'] ?? [];
-    $data['cities'] = array_column($items, 'city');
-    foreach ($items as $item) {
-      if($page_name == $item['slug']) {
-        $data['citySlug'] = $item['slug'];
-        $data['city'] = $item['city'];
-        $data['inCity'] = ' в '.$item['inName'];
-      }
-    }
-    if ($data['city']) {
-      $page_name = 'index';
-    }
+$branches = $indexData['globals']['branches'] ?? [];
+$data['cities'] = array_column($branches, 'city');
+foreach ($branches as $item) {
+  if ($page_name == ($item['slug'] ?? '')) {
+    $data['citySlug'] = $item['slug'];
+    $data['city'] = $item['city'];
+    $data['inCity'] = ' в '.$item['inName'];
   }
+}
+if ($data['city']) {
+  $page_name = 'index';
 }
 
 if ($page_name != 'index') {
@@ -77,5 +73,9 @@ $disclaimer = file_get_contents($config["data_dir"] . "/content/disclaimer.html"
 $manifest = readJSON($config["assets_dir"] ."/json/rev-manifest.json");
 $data["manifest"] = $manifest;
 $data["disclaimer"] = $disclaimer;
+
+$tokenTs = time();
+$tokenSig = hash_hmac("sha256", (string)$tokenTs, $config["form_secret"]);
+$data["formToken"] = $tokenTs . "." . $tokenSig;
 
 echo render($config["templates"], $data, $page_name);

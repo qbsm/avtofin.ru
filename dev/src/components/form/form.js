@@ -67,6 +67,12 @@ export default (opt) => {
     $('input[name="Телефон"]').val('');
   }
 
+  setTimeout(() => {
+    $('.js-form-token').each(function fillToken() {
+      $(this).val($(this).data('token'));
+    });
+  }, 10000);
+
   $('.js-form').on('submit', function handleSubmitForm(e) {
 
     const $this = $(this);

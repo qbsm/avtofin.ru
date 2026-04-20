@@ -32,7 +32,6 @@
                     {% for city in cities %}
                     <option value="{{ city }}">{{ city }}</option>
                     {% endfor %}
-                    <option value="Другое">Другое</option>
                 </select>
             </div>
             {% endif %}
@@ -40,6 +39,11 @@
                 <label class="form__label" for="message">Краткое описание вопроса</label>
                 <textarea type="text" id="message" class="form__textarea" placeholder="Введите текст" name="Текстареа"></textarea>
             </div>
+
+            <div class="honeypot" aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden">
+                <label>Сайт<input type="text" name="website" value="" tabindex="-1" autocomplete="off"></label>
+            </div>
+            <input type="hidden" class="js-form-token" name="form_token" value="" data-token="{{ formToken }}">
 
             <div class="form__item spinner-wrap">
                 <button type="submit" name="submit" class="form__submit button button-rounded {{ button.class }} js-send CKFormTrigger">

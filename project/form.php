@@ -9,6 +9,30 @@ $data = $_POST;
 
 file_put_contents('logs/form_'.date('Y-m-d_His').'_data.txt', print_r($data,true));
 
+if (!empty($_POST["website"])) {
+  http_response_code(400);
+  die("spam");
+}
+
+$token = $_POST["form_token"] ?? "";
+$parts = explode(".", $token, 2);
+$tokenValid = false;
+if (count($parts) === 2) {
+  [$ts, $sig] = $parts;
+  $expected = hash_hmac("sha256", $ts, $config["form_secret"]);
+  if (hash_equals($expected, $sig) && ctype_digit($ts)) {
+    $elapsed = time() - (int)$ts;
+    if ($elapsed >= ($config["form_min_delay"] ?? 10) && $elapsed < 86400) {
+      $tokenValid = true;
+    }
+  }
+}
+if (!$tokenValid) {
+  http_response_code(400);
+  die("token");
+}
+unset($data["form_token"], $data["website"]);
+
 if (array_key_exists("Телефон", $data)) {
   $phone = trim($_POST["Телефон"]);
 
