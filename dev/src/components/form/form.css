@@ -249,14 +249,37 @@
 }
 
 .form__agree {
-  display: block;
+  display: flex;
+  align-items: flex-start;
+  gap: .5em;
   font-size: 1.2rem;
   line-height: 1.2em;
-  text-align: center;
+  text-align: left;
+  cursor: pointer;
 }
 
-.form__agree * {
+.form__agree input[type="checkbox"] {
+  width: 1.6em;
+  height: 1.6em;
+  min-width: 1.6em;
+  margin: 0;
+  cursor: pointer;
+  accent-color: var(--color-1);
+}
+
+.form__agree-text {
+  flex: 1;
   font-size: inherit;
+  line-height: 1.4;
+}
+
+.form__agree a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.form__agree a:hover {
+  text-decoration: none;
 }
 
 .form__text {
