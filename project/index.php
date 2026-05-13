@@ -20,8 +20,18 @@ function render($templates_dir, $data, $page) {
 }
 
 function getPageData($name) {
+  global $config, $globalData;
+  $page = readJSON($config["data_dir"] . "/production/$name-production.json");
+  if (!is_array($page)) $page = [];
+  $pageGlobals = $page['globals'] ?? [];
+  $page['globals'] = array_merge($globalData, $pageGlobals);
+  return $page;
+}
+
+function loadGlobal() {
   global $config;
-  return readJSON($config["data_dir"] . "/production/$name-production.json");
+  $g = readJSON($config["data_dir"] . "/production/global-production.json");
+  return is_array($g) ? $g : [];
 }
 
 function loadBranches($manifest) {
@@ -42,6 +52,8 @@ function loadBranches($manifest) {
 
 
 $root = "";
+
+$globalData = loadGlobal();
 
 $path = explode('?', $_SERVER['REQUEST_URI'])[0];
 $segments = array_values(array_filter(explode('/', str_replace($root, '', $path)), 'strlen'));

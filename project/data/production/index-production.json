@@ -4,10 +4,6 @@
   "description": "Оформите займ под залог ПТС автомобиля прямо сейчас%inCity%. Решение сложных финансовых проблем стало проще с Автофинансом. Получите быстрый доступ к деньгам, оставаясь водителем. Надежно и удобно. ПТС у нас - авто у Вас! | Avtofin.org",
   "emailRecipients": [],
   "globals": {
-    "phone": {
-      "href": "88007707991",
-      "title": "8 (800) 770-79-91"
-    },
     "nav": [
       {
         "title": "Акции и специальные предложения",
@@ -39,25 +35,6 @@
         "href": ".branches",
         "class": "js-link-to"
       }
-    ],
-    "branches": [
-      "angarsk",
-      "barnaul",
-      "v-novgorod",
-      "irkutsk",
-      "kaliningrad",
-      "magnitogorsk",
-      "nizhnevartovsk",
-      "orel",
-      "petrozavodsk",
-      "pskov",
-      "saransk",
-      "simferopol",
-      "syktyvkar",
-      "tver",
-      "ulan-ude",
-      "chita",
-      "yakutsk"
     ]
   },
   "firstScreen": [

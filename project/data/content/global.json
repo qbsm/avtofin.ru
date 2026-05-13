@@ -1,0 +1,26 @@
+{
+  "brand": "АВТОФИНАНС",
+  "phone": {
+    "href": "88007707991",
+    "title": "8 (800) 770-79-91"
+  },
+  "branches": [
+    "angarsk",
+    "barnaul",
+    "v-novgorod",
+    "irkutsk",
+    "kaliningrad",
+    "magnitogorsk",
+    "nizhnevartovsk",
+    "orel",
+    "petrozavodsk",
+    "pskov",
+    "saransk",
+    "simferopol",
+    "syktyvkar",
+    "tver",
+    "ulan-ude",
+    "chita",
+    "yakutsk"
+  ]
+}

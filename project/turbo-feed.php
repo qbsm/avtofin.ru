@@ -13,11 +13,11 @@ $host = $_SERVER['HTTP_HOST'] ?? 'avtofin.org';
 $origin = $scheme . '://' . $host;
 
 $promo = readJSON($config["data_dir"] . "/production/promo-production.json");
-$indexData = readJSON($config["data_dir"] . "/production/index-production.json");
+$globalData = readJSON($config["data_dir"] . "/production/global-production.json") ?: [];
 
 $branchesDir = $config["data_dir"] . "/production/branches";
 $branches = [];
-foreach (($indexData['globals']['branches'] ?? []) as $slug) {
+foreach (($globalData['branches'] ?? []) as $slug) {
   if (!is_string($slug) || !preg_match('/^[a-z0-9_\-]+$/', $slug)) continue;
   $file = $branchesDir . '/' . $slug . '.json';
   if (!is_file($file)) continue;
@@ -27,7 +27,7 @@ foreach (($indexData['globals']['branches'] ?? []) as $slug) {
   $branches[] = $b;
 }
 
-$globalPhone = $indexData['globals']['phone'] ?? null;
+$globalPhone = $globalData['phone'] ?? null;
 
 function findSection($data, $name) {
   foreach (($data['firstScreen'] ?? []) as $s) if (($s['name'] ?? '') === $name) return $s;
