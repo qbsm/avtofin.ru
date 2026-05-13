@@ -4,8 +4,12 @@
             <span class="heading text-center">{{ data.heading | raw }}</span>
             <div class="divider"></div>
         </div>
+        {% set mapCenter = currentBranch.location|default(data.center) %}
+        {% set mapCenterSM = currentBranch.location|default(data.centerSM) %}
+        {% set mapZoom = currentBranch ? 15 : data.zoom %}
+        {% set mapZoomSM = currentBranch ? 14 : data.zoomSM %}
         <div class="section__item map-branches-wrap">
-            <div class="section__subitem map-placemarks-wrap js-map" data-center="{{data.center}}" data-centerSM="{{data.centerSM}}" data-zoom="{{data.zoom}}" data-zoomSM="{{data.zoomSM}}" data-container-id="map">
+            <div class="section__subitem map-placemarks-wrap js-map" data-center="{{ mapCenter }}" data-centerSM="{{ mapCenterSM }}" data-zoom="{{ mapZoom }}" data-zoomSM="{{ mapZoomSM }}" data-container-id="map">
                 <div class="section__inner placemarks-wrap">
                     <div class="placemark hidden">
                         {% for item in branches %}
