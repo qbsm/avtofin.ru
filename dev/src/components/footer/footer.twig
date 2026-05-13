@@ -32,9 +32,11 @@
             </div>
             {% endfor %}
         </div>
+        {% if data.legal %}
         <div class="section__item link-wrap">
-            <a href="https://mkk-bvs.ru" target="_blank" class="link link-a-b font-1-medium">Юридическая информация <span class="mdi mdi-chevron-right"></span></a>
+            <a href="{{ data.legal.href }}" target="_blank" class="link link-a-b font-1-medium">{{ data.legal.title }} <span class="mdi mdi-chevron-right"></span></a>
         </div>
+        {% endif %}
         <div class="section__item info-wrap">
             <span class="footer__copyright font-1-semibold">{{ data.copyright | raw }}{{ 'now' | date('Y') }}</span>
             <span class="footer__disclaimer">{{ data.disclaimer | raw }}</span>
