@@ -431,6 +431,37 @@
         "value": 2
       },
       "rate": 0.241
+    },
+    {
+      "name": "actions",
+      "visible": true,
+      "heading": "Акции и специальные предложения",
+      "items": [
+        {
+          "title": "Приведи друга<br>и получи <nobr>5&#8239;000&#8239;₽</nobr>",
+          "subtitle": "",
+          "desc": "",
+          "button": "Участвовать в акции",
+          "bg": "",
+          "icon": "data/img/actions/calculator-front-color.png"
+        },
+        {
+          "title": "7 дней пользования займом БЕСПЛАТНО для новых клиентов",
+          "subtitle": "",
+          "desc": "",
+          "button": "Участвовать в акции",
+          "bg": "",
+          "icon": "data/img/actions/target-front-color.png"
+        },
+        {
+          "title": "5-й месяц <nobr>пользования займом</nobr> <nobr>в подарок</nobr>",
+          "subtitle": "",
+          "desc": "",
+          "button": "Участвовать в акции",
+          "bg": "",
+          "icon": "data/img/actions/money-bag-front-color.png"
+        }
+      ]
     }
   ],
   "secondaryScreen": [
