@@ -39,7 +39,14 @@
         {% endif %}
         <div class="section__item info-wrap">
             <span class="footer__copyright font-1-semibold">{{ data.copyright | raw }}{{ 'now' | date('Y') }}</span>
-            <span class="footer__disclaimer">{{ data.disclaimer | raw }}</span>
+            <span class="footer__disclaimer">{{ data.disclaimer.text | raw }}</span>
+            {% if data.disclaimer.docs %}
+            <span class="footer__docs">
+                {% for doc in data.disclaimer.docs %}
+                <a href="{{ doc.href }}" target="_blank" class="footer__docs__link">{{ doc.title }}</a>{% if not loop.last %}<span class="footer__docs__sep">|</span>{% endif %}
+                {% endfor %}
+            </span>
+            {% endif %}
             <span class="footer__owner">{{ data.owner | raw }}, {{ phone.title }}</span>
         </div>
     </div>

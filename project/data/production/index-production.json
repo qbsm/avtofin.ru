@@ -323,7 +323,31 @@
       "title": "Юридическая информация",
       "copyright": "Все права защищены ООО «АВТОФИНАНС» 2026-",
       "owner": "Права на сайт принадлежат ООО «АВТОФИНАНС» (ИНН 7814827307 ОГРН 1237800103232 ). 197376, г. Санкт-Петербург, вн. тер. г. муниципальный округ Юнтолово, ул. Плесецкая, д. 6, стр. 1, помещ. 99Н",
-      "disclaimer": "Представленная информация не является публичной офертой, определяемой положениями ст. 437 ГК Российской Федерации и носит информационный характер. Оценивайте свои финансовые возможности и риски. <br><br> <a href='/data/docs/Svid.pdf' target='_blank' style='color: inherit; text-decoration: underline;'>Выписка ЕГРН</a> | <a href='/data/docs/egrul.pdf' target='_blank' style='color: inherit; text-decoration: underline;'>Выписка ЕГРЮЛ</a> | <a href='/data/docs/polobrpers.pdf' target='_blank' style='color: inherit; text-decoration: underline;'>Политика обработки персональных данных</a> |  <a href='/data/docs/polconfid.pdf' target='_blank' style='color: inherit; text-decoration: underline;'>Политика конфиденциальности</a> |  <a href='/data/docs/smena.pdf' target='_blank' style='color: inherit; text-decoration: underline;'>Решение о смене наименования</a>"
+      "disclaimer": {
+        "text": "Представленная информация не является публичной офертой, определяемой положениями ст. 437 ГК Российской Федерации и носит информационный характер. Оценивайте свои финансовые возможности и риски.",
+        "docs": [
+          {
+            "title": "Выписка ЕГРН",
+            "href": "/data/docs/Svid.pdf"
+          },
+          {
+            "title": "Выписка ЕГРЮЛ",
+            "href": "/data/docs/egrul.pdf"
+          },
+          {
+            "title": "Политика обработки персональных данных",
+            "href": "/data/docs/polobrpers.pdf"
+          },
+          {
+            "title": "Политика конфиденциальности",
+            "href": "/data/docs/polconfid.pdf"
+          },
+          {
+            "title": "Решение о смене наименования",
+            "href": "/data/docs/smena.pdf"
+          }
+        ]
+      }
     }
   ]
 }
