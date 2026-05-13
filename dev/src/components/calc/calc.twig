@@ -1,3 +1,12 @@
+{% set _m = data.time.value %}
+{% set _mPlural = 'месяцев' %}
+{% if not (_m % 100 >= 11 and _m % 100 <= 14) %}
+  {% if _m % 10 == 1 %}
+    {% set _mPlural = 'месяц' %}
+  {% elseif _m % 10 in [2, 3, 4] %}
+    {% set _mPlural = 'месяца' %}
+  {% endif %}
+{% endif %}
 <section class="calculator section">
     <div class="container">
         <div class="section__item heading-wrap">
@@ -14,7 +23,7 @@
                     <div class="divider"></div>
                     <div class="calc__subitem time-wrap">
                         <span class="time__label label font-1-medium">Срок займа</span>
-                        <span class="time__value nobr value font-1-semibold"><span class="js-months-label">{{ data.time.value }}</span> месяцев</span>
+                        <span class="time__value nobr value font-1-semibold"><span class="js-months-label">{{ data.time.value }}</span> <span class="js-months-plural">{{ _mPlural }}</span></span>
                     </div>
                     <div class="divider"></div>
                     <div class="calc__subitem rate-wrap">
@@ -58,7 +67,7 @@
                                 <input type="text" class="calc__input calc__input-time  js-months-input" id="time" value="{{ data.time.value }}">
                             </div>
                             <div class="calc__add label-wrap">
-                                <span class="value">месяцев</span>
+                                <span class="value js-months-plural">{{ _mPlural }}</span>
                             </div>
                         </div>
                     </div>

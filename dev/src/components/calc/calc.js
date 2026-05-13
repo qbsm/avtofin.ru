@@ -1,5 +1,14 @@
 export default () => {
 
+    function pluralMonths(n) {
+        const m10 = n % 10;
+        const m100 = n % 100;
+        if (m100 >= 11 && m100 <= 14) return 'месяцев';
+        if (m10 === 1) return 'месяц';
+        if (m10 >= 2 && m10 <= 4) return 'месяца';
+        return 'месяцев';
+    }
+
     function calc() {
         const rate = Number($('.js-rate-label').attr('data-rate'));
         const amount = Number($('.js-amount-range').val());
@@ -13,6 +22,7 @@ export default () => {
         }
         $('.js-months-input').val(months);
         $('.js-months-label').html(months);
+        $('.js-months-plural').html(pluralMonths(months));
 
         const payment = Math.round(amount * rate/100 * months * 30);
         const paymentVal = String(payment).replace(/(.)(?=(\d{3})+$)/g,'$1 ')
