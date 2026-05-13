@@ -31,7 +31,16 @@ $path = explode('?', $_SERVER['REQUEST_URI'])[0];
 $segments = array_values(array_filter(explode('/', str_replace($root, '', $path)), 'strlen'));
 
 $indexData = getPageData('index');
-$branches = $indexData['globals']['branches'] ?? [];
+$branches = $indexData['globals']['branches'] ?? null;
+if (!$branches) {
+  foreach (array_merge($indexData['firstScreen'] ?? [], $indexData['secondaryScreen'] ?? []) as $s) {
+    if (($s['name'] ?? '') === 'branches') {
+      $branches = $s['items'] ?? [];
+      break;
+    }
+  }
+}
+$branches = $branches ?: [];
 
 $isPromo = (($segments[0] ?? '') === 'promo');
 $citySlug = $isPromo ? ($segments[1] ?? '') : ($segments[0] ?? '');
