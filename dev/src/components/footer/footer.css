@@ -100,10 +100,9 @@
 }
 
 .footer__docs {
-    margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
-    gap: .25em .75em;
+    gap: .5em 1.25em;
 }
 
 .footer__docs__link {
