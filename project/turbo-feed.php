@@ -155,7 +155,7 @@ foreach ($branches as $branch) {
 header('Content-Type: application/rss+xml; charset=UTF-8');
 echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 ?>
-<rss xmlns:yandex="http://news.yandex.ru" xmlns:media="http://search.yahoo.com/mrss/" xmlns:turbo="http://turbo.yandex.ru" version="2.0">
+<rss xmlns:yandex="http://news.yandex.ru" xmlns:turbo="http://turbo.yandex.ru" version="2.0">
 <channel>
   <title><?= htmlspecialchars('АВТОФИНАНС — деньги под залог ПТС', ENT_XML1, 'UTF-8') ?></title>
   <link><?= htmlspecialchars($origin, ENT_XML1, 'UTF-8') ?></link>
