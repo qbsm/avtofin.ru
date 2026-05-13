@@ -3,8 +3,8 @@ ini_set("display_errors", 1);
 $src_dir = __DIR__ . "/data/content/";
 $output_dir = __DIR__ . "/data/production/";
 
-$status = filter_var($_GET["valid"], FILTER_SANITIZE_STRING);
-$file_name = filter_var($_GET["fileName"], FILTER_SANITIZE_STRING);
+$status = htmlspecialchars($_GET["valid"], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$file_name = htmlspecialchars($_GET["fileName"], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 
 $newfile = str_replace('.json', '-production.json', $file_name);
 
