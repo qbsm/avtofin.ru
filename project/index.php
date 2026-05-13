@@ -19,12 +19,41 @@ function render($templates_dir, $data, $page) {
   return $engine->render("pages/" . $page_name . ".twig", $data);
 }
 
+function deepMerge($base, $override) {
+  if (!is_array($base) || !is_array($override)) return $override;
+  foreach ($override as $k => $v) {
+    if (isset($base[$k]) && is_array($base[$k]) && is_array($v) && !array_is_list($base[$k])) {
+      $base[$k] = deepMerge($base[$k], $v);
+    } else {
+      $base[$k] = $v;
+    }
+  }
+  return $base;
+}
+
+function resolveScreen($names, $globalSections, $pageOverrides) {
+  $result = [];
+  foreach ((array)$names as $name) {
+    if (!is_string($name)) continue;
+    $base = $globalSections[$name] ?? ['name' => $name];
+    $base['name'] = $name;
+    $over = $pageOverrides[$name] ?? null;
+    $result[] = is_array($over) ? deepMerge($base, $over) : $base;
+  }
+  return $result;
+}
+
 function getPageData($name) {
   global $config, $globalData;
   $page = readJSON($config["data_dir"] . "/production/$name-production.json");
   if (!is_array($page)) $page = [];
   $pageGlobals = $page['globals'] ?? [];
-  $page['globals'] = array_merge($globalData, $pageGlobals);
+  $page['globals'] = array_merge(array_diff_key($globalData, ['sections' => 1]), $pageGlobals);
+  $globalSections = $globalData['sections'] ?? [];
+  $overrides = $page['sections'] ?? [];
+  $page['firstScreen'] = resolveScreen($page['firstScreen'] ?? [], $globalSections, $overrides);
+  $page['secondaryScreen'] = resolveScreen($page['secondaryScreen'] ?? [], $globalSections, $overrides);
+  unset($page['sections']);
   return $page;
 }
 

@@ -29,16 +29,32 @@ foreach (($globalData['branches'] ?? []) as $slug) {
 
 $globalPhone = $globalData['phone'] ?? null;
 
-function findSection($data, $name) {
-  foreach (($data['firstScreen'] ?? []) as $s) if (($s['name'] ?? '') === $name) return $s;
-  foreach (($data['secondaryScreen'] ?? []) as $s) if (($s['name'] ?? '') === $name) return $s;
-  return null;
+function deepMerge($base, $override) {
+  if (!is_array($base) || !is_array($override)) return $override;
+  foreach ($override as $k => $v) {
+    if (isset($base[$k]) && is_array($base[$k]) && is_array($v) && !array_is_list($base[$k])) {
+      $base[$k] = deepMerge($base[$k], $v);
+    } else {
+      $base[$k] = $v;
+    }
+  }
+  return $base;
 }
 
-$intro = findSection($promo, 'intro');
-$advantages = findSection($promo, 'advantages');
-$conditions = findSection($promo, 'conditions');
-$accordion = findSection($promo, 'accordion');
+function resolveSection($name, $globalSections, $pageOverrides) {
+  $base = $globalSections[$name] ?? [];
+  $base['name'] = $name;
+  $over = $pageOverrides[$name] ?? null;
+  return is_array($over) ? deepMerge($base, $over) : $base;
+}
+
+$globalSections = $globalData['sections'] ?? [];
+$promoOverrides = $promo['sections'] ?? [];
+
+$intro = resolveSection('intro', $globalSections, $promoOverrides);
+$advantages = resolveSection('advantages', $globalSections, $promoOverrides);
+$conditions = resolveSection('conditions', $globalSections, $promoOverrides);
+$accordion = resolveSection('accordion', $globalSections, $promoOverrides);
 
 function buildItem($promo, $intro, $advantages, $conditions, $accordion, $origin, $branch = null) {
   $city = $branch['city'] ?? '';
