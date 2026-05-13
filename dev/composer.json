@@ -3,7 +3,8 @@
         "vendor-dir": "../project/vendor"
     },
     "require": {
-        "twig/twig": "~1.0",
+        "php": ">=8.1",
+        "twig/twig": "^3.0",
         "ismart/form": "dev-master"
     }
 }
