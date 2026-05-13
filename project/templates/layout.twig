@@ -10,8 +10,84 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#020307">
-  <title>{{ title | replace({'%city%': city, '%inCity%': inCity}) }}</title>
-  <meta name="description" content="{{ description | replace({'%city%': city, '%inCity%': inCity}) }}">
+  {% set pageTitle = title | replace({'%city%': city, '%inCity%': inCity}) %}
+  {% set pageDescription = description | replace({'%city%': city, '%inCity%': inCity}) %}
+  {% set shareImage = origin ~ '/data/img/intro/bg.webp' %}
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ pageDescription }}">
+  <link rel="canonical" href="{{ canonicalUrl }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="АВТОФИНАНС">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:description" content="{{ pageDescription }}">
+  <meta property="og:url" content="{{ canonicalUrl }}">
+  <meta property="og:image" content="{{ shareImage }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ pageTitle }}">
+  <meta name="twitter:description" content="{{ pageDescription }}">
+  <meta name="twitter:image" content="{{ shareImage }}">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "АВТОФИНАНС",
+    "alternateName": "Автоломбард Автофинанс",
+    "url": {{ (origin ~ '/') | json_encode | raw }},
+    "logo": {{ (origin ~ '/data/img/ui/brand-logo-color-2.svg') | json_encode | raw }},
+    "image": {{ shareImage | json_encode | raw }},
+    "description": {{ pageDescription | json_encode | raw }}{% if phone.title is defined %},
+    "telephone": {{ phone.title | json_encode | raw }}{% endif %}{% if branches %},
+    "subOrganization": [{% for b in branches %}
+      {
+        "@type": "PawnShop",
+        "name": {{ ('АВТОФИНАНС в ' ~ b.inName) | json_encode | raw }},
+        "url": {{ (origin ~ '/' ~ b.slug ~ '/') | json_encode | raw }},
+        "telephone": {{ b.phone.title | json_encode | raw }},
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": {{ b.address | json_encode | raw }},
+          "addressLocality": {{ b.city | json_encode | raw }},
+          "addressCountry": "RU"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": {{ (b.location | split(',', 2))[0] | trim | json_encode | raw }},
+          "longitude": {{ (b.location | split(',', 2))[1] | trim | json_encode | raw }}
+        },
+        "openingHours": ["Mo-Fr 09:00-20:00", "Sa-Su 09:00-19:00"]
+      }{% if not loop.last %},{% endif %}{% endfor %}
+    ]{% endif %}
+  }
+  </script>
+  {% if currentBranch %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PawnShop",
+    "name": {{ ('АВТОФИНАНС в ' ~ currentBranch.inName) | json_encode | raw }},
+    "url": {{ canonicalUrl | json_encode | raw }},
+    "image": {{ shareImage | json_encode | raw }},
+    "description": {{ pageDescription | json_encode | raw }},
+    "telephone": {{ currentBranch.phone.title | json_encode | raw }},
+    "priceRange": "₽",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": {{ currentBranch.address | json_encode | raw }},
+      "addressLocality": {{ currentBranch.city | json_encode | raw }},
+      "addressCountry": "RU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": {{ (currentBranch.location | split(',', 2))[0] | trim | json_encode | raw }},
+      "longitude": {{ (currentBranch.location | split(',', 2))[1] | trim | json_encode | raw }}
+    },
+    "openingHours": ["Mo-Fr 09:00-20:00", "Sa-Su 09:00-19:00"]
+  }
+  </script>
+  {% endif %}
   <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">

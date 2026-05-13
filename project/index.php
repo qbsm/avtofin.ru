@@ -125,6 +125,11 @@ $manifest = readJSON($config["assets_dir"] ."/json/rev-manifest.json");
 $data["manifest"] = $manifest;
 $data["disclaimer"] = $disclaimer;
 
+$scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+$data["origin"] = $scheme . '://' . ($_SERVER['HTTP_HOST'] ?? 'avtofin.org');
+$data["canonicalUrl"] = $data["origin"] . strtok($_SERVER['REQUEST_URI'], '?');
+$data["currentBranch"] = $matchedBranch;
+
 $tokenTs = time();
 $tokenSig = hash_hmac("sha256", (string)$tokenTs, $config["form_secret"]);
 $data["formToken"] = $tokenTs . "." . $tokenSig;
