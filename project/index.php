@@ -10,9 +10,15 @@ function readJSON($path) {
 }
 
 function render($templates_dir, $data, $page) {
-  $loader = new Twig_Loader_Filesystem($templates_dir);
-  $engine = new Twig_Environment($loader);
-  $engine->getExtension('Twig_Extension_Core')->setTimezone('Europe/Moscow');
+  if (class_exists('\Twig\Loader\FilesystemLoader')) {
+    $loader = new \Twig\Loader\FilesystemLoader($templates_dir);
+    $engine = new \Twig\Environment($loader);
+    $engine->getExtension(\Twig\Extension\CoreExtension::class)->setTimezone('Europe/Moscow');
+  } else {
+    $loader = new Twig_Loader_Filesystem($templates_dir);
+    $engine = new Twig_Environment($loader);
+    $engine->getExtension('Twig_Extension_Core')->setTimezone('Europe/Moscow');
+  }
 
   $page_name = $page ? $page : "index";
 
