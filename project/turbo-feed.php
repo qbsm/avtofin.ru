@@ -41,20 +41,27 @@ function deepMerge($base, $override) {
   return $base;
 }
 
-function resolveSection($name, $globalSections, $pageOverrides) {
+function findSectionItem($items, $name) {
+  foreach ((array)$items as $it) {
+    if (is_array($it) && ($it['name'] ?? '') === $name) return $it;
+  }
+  return [];
+}
+
+function resolveSection($name, $globalSections, $promo) {
   $base = $globalSections[$name] ?? [];
   $base['name'] = $name;
-  $over = $pageOverrides[$name] ?? null;
-  return is_array($over) ? deepMerge($base, $over) : $base;
+  $over = findSectionItem($promo['firstScreen'] ?? [], $name)
+       ?: findSectionItem($promo['secondaryScreen'] ?? [], $name);
+  return deepMerge($base, $over);
 }
 
 $globalSections = $globalData['sections'] ?? [];
-$promoOverrides = $promo['sections'] ?? [];
 
-$intro = resolveSection('intro', $globalSections, $promoOverrides);
-$advantages = resolveSection('advantages', $globalSections, $promoOverrides);
-$conditions = resolveSection('conditions', $globalSections, $promoOverrides);
-$accordion = resolveSection('accordion', $globalSections, $promoOverrides);
+$intro = resolveSection('intro', $globalSections, $promo);
+$advantages = resolveSection('advantages', $globalSections, $promo);
+$conditions = resolveSection('conditions', $globalSections, $promo);
+$accordion = resolveSection('accordion', $globalSections, $promo);
 
 function buildItem($promo, $intro, $advantages, $conditions, $accordion, $origin, $branch = null) {
   $city = $branch['city'] ?? '';

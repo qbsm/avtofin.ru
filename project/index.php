@@ -31,14 +31,16 @@ function deepMerge($base, $override) {
   return $base;
 }
 
-function resolveScreen($names, $globalSections, $pageOverrides) {
+function resolveScreen($items, $globalSections) {
   $result = [];
-  foreach ((array)$names as $name) {
-    if (!is_string($name)) continue;
-    $base = $globalSections[$name] ?? ['name' => $name];
+  foreach ((array)$items as $item) {
+    if (is_string($item)) $item = ['name' => $item];
+    if (!is_array($item)) continue;
+    $name = $item['name'] ?? null;
+    if (!$name) continue;
+    $base = $globalSections[$name] ?? [];
     $base['name'] = $name;
-    $over = $pageOverrides[$name] ?? null;
-    $result[] = is_array($over) ? deepMerge($base, $over) : $base;
+    $result[] = deepMerge($base, $item);
   }
   return $result;
 }
@@ -50,10 +52,8 @@ function getPageData($name) {
   $pageGlobals = $page['globals'] ?? [];
   $page['globals'] = array_merge(array_diff_key($globalData, ['sections' => 1]), $pageGlobals);
   $globalSections = $globalData['sections'] ?? [];
-  $overrides = $page['sections'] ?? [];
-  $page['firstScreen'] = resolveScreen($page['firstScreen'] ?? [], $globalSections, $overrides);
-  $page['secondaryScreen'] = resolveScreen($page['secondaryScreen'] ?? [], $globalSections, $overrides);
-  unset($page['sections']);
+  $page['firstScreen'] = resolveScreen($page['firstScreen'] ?? [], $globalSections);
+  $page['secondaryScreen'] = resolveScreen($page['secondaryScreen'] ?? [], $globalSections);
   return $page;
 }
 
