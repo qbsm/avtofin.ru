@@ -1,0 +1,18 @@
+{
+  "visible": true,
+  "city": "Магнитогорск",
+  "slug": "magnitogorsk",
+  "inName": "Магнитогорске",
+  "emailRecipients": [
+    "magnitogorsk@autosaim.su",
+    "autozaimorg@yandex.ru"
+  ],
+  "address": "пр. Ленина, д.6, Магнитогорск",
+  "location": "53.435281, 58.983193",
+  "yandex": "https://yandex.ru/maps/235/magnitogorsk/house/prospekt_lenina_6/YUEYfw9jSEwEQFtpfXhydH5rZQ==/?ll=58.983193%2C53.435282&z=17",
+  "working": "Пн-Пт 09:00-20:00<br>Сб-Вс 09:00-19:00",
+  "phone": {
+    "href": "+7951239-49-17",
+    "title": "8 (3519) 49-49-17, +7 (951) 239-49-17"
+  }
+}

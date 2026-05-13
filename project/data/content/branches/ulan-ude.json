@@ -1,0 +1,18 @@
+{
+  "visible": true,
+  "city": "Улан-Удэ",
+  "slug": "ulan-ude",
+  "inName": "Улан-Удэ",
+  "emailRecipients": [
+    "uu@autosaim.su",
+    "autozaimorg@yandex.ru"
+  ],
+  "address": "ул. Борсоева, д. 12, Улан-Удэ",
+  "location": "51.842032, 107.576750",
+  "yandex": "https://yandex.ru/maps/-/CDqs4YYH",
+  "working": "Пн-Пт 09:00-20:00<br>Сб-Вс 09:00-19:00",
+  "phone": {
+    "href": "+79021606454",
+    "title": "+7 (3012) 60-64-54, +7 (902) 160-64-54"
+  }
+}

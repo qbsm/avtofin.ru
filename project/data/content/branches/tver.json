@@ -1,0 +1,18 @@
+{
+  "visible": true,
+  "city": "Тверь",
+  "slug": "tver",
+  "inName": "Твери",
+  "emailRecipients": [
+    "tver@autosaim.su",
+    "autozaimorg@yandex.ru"
+  ],
+  "address": "пр-т Ленина, д. 26А, Тверь",
+  "location": "56.851067, 35.840857",
+  "yandex": "https://yandex.ru/maps/-/CDqs4U8V",
+  "working": "Пн-Пт 09:00-20:00<br>Сб-Вс 09:00-19:00",
+  "phone": {
+    "href": "+79961350078",
+    "title": "+7 (996) 135-00-78"
+  }
+}

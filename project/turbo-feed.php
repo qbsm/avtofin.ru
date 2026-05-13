@@ -14,13 +14,19 @@ $origin = $scheme . '://' . $host;
 
 $promo = readJSON($config["data_dir"] . "/production/promo-production.json");
 $indexData = readJSON($config["data_dir"] . "/production/index-production.json");
-$branches = $indexData['globals']['branches'] ?? null;
-if (!$branches) {
-  foreach (array_merge($indexData['firstScreen'] ?? [], $indexData['secondaryScreen'] ?? []) as $s) {
-    if (($s['name'] ?? '') === 'branches') { $branches = $s['items'] ?? []; break; }
-  }
+
+$branchesDir = $config["data_dir"] . "/production/branches";
+$branches = [];
+foreach (($indexData['globals']['branches'] ?? []) as $slug) {
+  if (!is_string($slug) || !preg_match('/^[a-z0-9_\-]+$/', $slug)) continue;
+  $file = $branchesDir . '/' . $slug . '.json';
+  if (!is_file($file)) continue;
+  $b = readJSON($file);
+  if (!is_array($b)) continue;
+  if (isset($b['visible']) && $b['visible'] === false) continue;
+  $branches[] = $b;
 }
-$branches = $branches ?: [];
+
 $globalPhone = $indexData['globals']['phone'] ?? null;
 
 function findSection($data, $name) {

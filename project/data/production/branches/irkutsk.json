@@ -1,0 +1,18 @@
+{
+  "visible": true,
+  "city": "Иркутск",
+  "slug": "irkutsk",
+  "inName": "Иркутске",
+  "emailRecipients": [
+    "irkutsk@autosaim.su",
+    "autozaimorg@yandex.ru"
+  ],
+  "address": "ул. Баррикад, 32А/7, Иркутск",
+  "location": "52.292507, 104.313880",
+  "yandex": "https://yandex.ru/maps/-/CDqs4MPE",
+  "working": "Пн-Пт 09:00-20:00<br>Сб-Вс 09:00-19:00",
+  "phone": {
+    "href": "+79148956363",
+    "title": "+7 (3952) 95-63-63, +7 (914) 895-63-63"
+  }
+}

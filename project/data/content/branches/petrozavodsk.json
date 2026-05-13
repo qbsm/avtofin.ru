@@ -1,0 +1,18 @@
+{
+  "visible": true,
+  "city": "Петрозаводск",
+  "slug": "petrozavodsk",
+  "inName": "Петрозаводске",
+  "emailRecipients": [
+    "petrozavodsk@autosaim.su",
+    "autozaimorg@yandex.ru"
+  ],
+  "address": "ул. Гоголя, д. 29, Петрозаводск",
+  "location": "61.780700, 34.353661",
+  "yandex": "https://yandex.ru/maps/-/CDqs4QzB",
+  "working": "Пн-Пт 09:00-20:00<br>Сб-Вс 09:00-19:00",
+  "phone": {
+    "href": "+79588566685",
+    "title": "+7 (8142) 35-96-36, +7 (958) 856-66-85"
+  }
+}

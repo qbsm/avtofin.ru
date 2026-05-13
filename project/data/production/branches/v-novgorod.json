@@ -1,0 +1,18 @@
+{
+  "visible": true,
+  "city": "Великий Новгород",
+  "slug": "v-novgorod",
+  "inName": "Великом Новгороде",
+  "emailRecipients": [
+    "vnovgorod@autosaim.su",
+    "autozaimorg@yandex.ru"
+  ],
+  "address": "ул. Нехинская, д. 55, Великий Новгород",
+  "location": "58.524289, 31.230254",
+  "yandex": "https://yandex.ru/maps/-/CDqs4MOs",
+  "working": "Пн-Пт 09:00-20:00<br>Сб-Вс 09:00-19:00",
+  "phone": {
+    "href": "+79082912093",
+    "title": "+7 (8162) 15-15-45, +7 (908)291-20-93"
+  }
+}

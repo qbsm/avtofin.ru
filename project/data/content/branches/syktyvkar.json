@@ -1,0 +1,18 @@
+{
+  "visible": true,
+  "city": "Сыктывкар",
+  "slug": "syktyvkar",
+  "inName": "Сыктывкаре",
+  "emailRecipients": [
+    "syktyvkar@autosaim.su",
+    "autozaimorg@yandex.ru"
+  ],
+  "address": "ул. Морозова, д. 87, Сыктывкар",
+  "location": "61.653248, 50.795777",
+  "yandex": "https://yandex.ru/maps/-/CDqs4Uz8",
+  "working": "Пн-Пт 09:00-20:00<br>Сб-Вс 09:00-19:00",
+  "phone": {
+    "href": "+79658602444",
+    "title": "+7 (8212) 25-24-44, +7 (965) 860-24-44"
+  }
+}

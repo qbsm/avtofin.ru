@@ -1,0 +1,18 @@
+{
+  "visible": true,
+  "city": "Орел",
+  "slug": "orel",
+  "inName": "Орле",
+  "emailRecipients": [
+    "orel@autosaim.su",
+    "autozaimorg@yandex.ru"
+  ],
+  "address": "ул. Комсомольская, д. 77А, Орел",
+  "location": "52.952590, 36.062589",
+  "yandex": "https://yandex.ru/maps/-/CDqs4Qmp",
+  "working": "Пн-Пт 09:00-20:00<br>Сб-Вс 09:00-19:00",
+  "phone": {
+    "href": "+79036371868",
+    "title": "+7 (4862) 78-18-68, +7 (903) 637-18-68"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "visible": true,
+  "city": "Ангарск",
+  "slug": "angarsk",
+  "inName": "Ангарске",
+  "emailRecipients": [
+    "angarsk@autosaim.su",
+    "autozaimorg@yandex.ru"
+  ],
+  "address": "74-й квартал, д.7, Ангарск",
+  "location": "52.540891, 103.888267",
+  "yandex": "https://yandex.ru/maps/11256/angarsk/house/74_y_kvartal_7/ZUkFaA9oQUcBW0JvYWJ0dXxrbQk=/?ll=103.888267%2C52.540891&z=17.24",
+  "working": "Пн-Пт 09:00-20:00<br>Сб-Вс 09:00-19:00",
+  "phone": {
+    "href": "+79148956463",
+    "title": "+7 (3952) 95-64-63, +7 (914) 895-64-63"
+  }
+}

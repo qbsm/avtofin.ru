@@ -1,0 +1,18 @@
+{
+  "visible": true,
+  "city": "Чита",
+  "slug": "chita",
+  "inName": "Чита",
+  "emailRecipients": [
+    "chita@autosaim.su",
+    "autozaimorg@yandex.ru"
+  ],
+  "address": "ул. Чкалова 145, Чита",
+  "location": "52.040023, 113.494653",
+  "yandex": "https://yandex.ru/maps/68/chita/house/ulitsa_chkalova_145/ZUgFaANpTUMCX0JvYWJxdXxjZgs=/?ll=113.494653%2C52.040023&z=17",
+  "working": "Пн-Пт 09:00-20:00<br>Сб-Вс 09:00-19:00",
+  "phone": {
+    "href": "+79143500707",
+    "title": "+7 (3022) 500-707, +7 (914) 350-07-07"
+  }
+}

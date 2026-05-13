@@ -1,0 +1,18 @@
+{
+  "visible": true,
+  "city": "Якутск",
+  "slug": "yakutsk",
+  "inName": "Якутске",
+  "emailRecipients": [
+    "yakutsk@autosaim.su",
+    "autozaimorg@yandex.ru"
+  ],
+  "address": "ул. Петра Алексеева, д.62 к.Д , офис 23 (2 этаж ТЦ «АЛМАЗ») Якутск",
+  "location": "62.042708, 129.725701",
+  "yandex": "https://yandex.ru/maps/-/CDTbyJ5r",
+  "working": "Пн-Пт 09:00-20:00<br>Сб-Вс 09:00-19:00",
+  "phone": {
+    "href": "+79142483249",
+    "title": "+7 (4112) 73-55-52, +7 (914) 248-32-49"
+  }
+}

@@ -10,15 +10,9 @@ function readJSON($path) {
 }
 
 function render($templates_dir, $data, $page) {
-  if (class_exists('\Twig\Loader\FilesystemLoader')) {
-    $loader = new \Twig\Loader\FilesystemLoader($templates_dir);
-    $engine = new \Twig\Environment($loader);
-    $engine->getExtension(\Twig\Extension\CoreExtension::class)->setTimezone('Europe/Moscow');
-  } else {
-    $loader = new Twig_Loader_Filesystem($templates_dir);
-    $engine = new Twig_Environment($loader);
-    $engine->getExtension('Twig_Extension_Core')->setTimezone('Europe/Moscow');
-  }
+  $loader = new \Twig\Loader\FilesystemLoader($templates_dir);
+  $engine = new \Twig\Environment($loader);
+  $engine->getExtension(\Twig\Extension\CoreExtension::class)->setTimezone('Europe/Moscow');
 
   $page_name = $page ? $page : "index";
 
@@ -30,6 +24,22 @@ function getPageData($name) {
   return readJSON($config["data_dir"] . "/production/$name-production.json");
 }
 
+function loadBranches($manifest) {
+  global $config;
+  $dir = $config["data_dir"] . "/production/branches";
+  $result = [];
+  foreach ($manifest as $slug) {
+    if (!is_string($slug) || !preg_match('/^[a-z0-9_\-]+$/', $slug)) continue;
+    $file = $dir . '/' . $slug . '.json';
+    if (!is_file($file)) continue;
+    $b = readJSON($file);
+    if (!is_array($b)) continue;
+    if (isset($b['visible']) && $b['visible'] === false) continue;
+    $result[] = $b;
+  }
+  return $result;
+}
+
 
 $root = "";
 
@@ -37,16 +47,8 @@ $path = explode('?', $_SERVER['REQUEST_URI'])[0];
 $segments = array_values(array_filter(explode('/', str_replace($root, '', $path)), 'strlen'));
 
 $indexData = getPageData('index');
-$branches = $indexData['globals']['branches'] ?? null;
-if (!$branches) {
-  foreach (array_merge($indexData['firstScreen'] ?? [], $indexData['secondaryScreen'] ?? []) as $s) {
-    if (($s['name'] ?? '') === 'branches') {
-      $branches = $s['items'] ?? [];
-      break;
-    }
-  }
-}
-$branches = $branches ?: [];
+$branches = loadBranches($indexData['globals']['branches'] ?? []);
+$indexData['globals']['branches'] = $branches;
 
 $isPromo = (($segments[0] ?? '') === 'promo');
 $citySlug = $isPromo ? ($segments[1] ?? '') : ($segments[0] ?? '');
