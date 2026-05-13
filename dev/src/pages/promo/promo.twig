@@ -1,0 +1,27 @@
+{% extends "layout.twig" %}
+{% block content %}
+
+  <div class="wrapper">
+    {% for section in firstScreen %}
+      {% if section.visible %}
+      {% include "parts/" ~ section.name ~ ".twig" with {
+        data: section
+      }%}
+      {% endif %}
+    {% endfor %}
+
+    <div class="secondary-screen">
+    {% for section in secondaryScreen %}
+      {% if section.visible %}
+      {% include "parts/" ~ section.name ~ ".twig" with {
+        data: section
+      }%}
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+
+  {% include "parts/modal.twig" with {
+    disclaimer: data.disclaimer
+  }%}
+{% endblock %}

@@ -27,46 +27,80 @@ function getPageData($name) {
 
 $root = "";
 
-$query_string = $_SERVER['QUERY_STRING'];
-$page_name =
-  explode(
-    '/',
-    str_replace(
-      $root,
-      '',
-      explode(
-        '?',
-        $_SERVER['REQUEST_URI']
-      )[0]
-    )
-  )[1];
-$page_name = $page_name ? $page_name : "index";
-//$data = getPageData($page_name);
+$path = explode('?', $_SERVER['REQUEST_URI'])[0];
+$segments = array_values(array_filter(explode('/', str_replace($root, '', $path)), 'strlen'));
 
 $indexData = getPageData('index');
-$data = $indexData;
-$data['page'] = 'index';
-$data['city'] = '';
-$data['inName'] = '';
-foreach ($indexData['globals'] ?? [] as $name => $value) {
-    $data[$name] = $value;
-}
 $branches = $indexData['globals']['branches'] ?? [];
-$data['cities'] = array_column($branches, 'city');
+
+$isPromo = (($segments[0] ?? '') === 'promo');
+$citySlug = $isPromo ? ($segments[1] ?? '') : ($segments[0] ?? '');
+
+$matchedBranch = null;
 foreach ($branches as $item) {
-  if ($page_name == ($item['slug'] ?? '')) {
-    $data['citySlug'] = $item['slug'];
-    $data['city'] = $item['city'];
-    $data['inCity'] = ' в '.$item['inName'];
+  if ($citySlug && $citySlug === ($item['slug'] ?? '')) {
+    $matchedBranch = $item;
+    break;
   }
 }
-if ($data['city']) {
-  $page_name = 'index';
-}
 
-if ($page_name != 'index') {
-  http_response_code(404);
-  exit();
+if ($isPromo) {
+  $page_name = 'promo';
+  $promoData = getPageData('promo');
+  $data = $promoData;
+  foreach ($indexData['globals'] ?? [] as $name => $value) {
+    $data[$name] = $value;
+  }
+  $data['globals'] = $indexData['globals'] ?? [];
+  $data['page'] = 'promo';
+  $data['cities'] = array_column($branches, 'city');
+  $data['city'] = '';
+  $data['inCity'] = '';
+  $data['citySlug'] = '';
+
+  if ($citySlug) {
+    if (!$matchedBranch) {
+      http_response_code(404);
+      exit();
+    }
+    $data['citySlug'] = $matchedBranch['slug'];
+    $data['city'] = $matchedBranch['city'];
+    $data['inCity'] = ' в ' . $matchedBranch['inName'];
+    $data['branches'] = [$matchedBranch];
+    $data['globals']['branches'] = [$matchedBranch];
+    if (!empty($matchedBranch['title'])) {
+      $data['title'] = $matchedBranch['title'];
+    }
+    if (!empty($matchedBranch['description:'])) {
+      $data['description'] = $matchedBranch['description:'];
+    }
+    if (!empty($matchedBranch['emailRecipients'])) {
+      $data['emailRecipients'] = $matchedBranch['emailRecipients'];
+    }
+  }
+} else {
+  $data = $indexData;
+  $data['page'] = 'index';
+  $data['city'] = '';
+  $data['inName'] = '';
+  $data['inCity'] = '';
+  foreach ($indexData['globals'] ?? [] as $name => $value) {
+    $data[$name] = $value;
+  }
+  $data['cities'] = array_column($branches, 'city');
+
+  $page_name = $citySlug ?: 'index';
+  if ($matchedBranch) {
+    $data['citySlug'] = $matchedBranch['slug'];
+    $data['city'] = $matchedBranch['city'];
+    $data['inCity'] = ' в ' . $matchedBranch['inName'];
+    $page_name = 'index';
+  }
+
+  if ($page_name != 'index') {
+    http_response_code(404);
+    exit();
+  }
 }
 
 $disclaimer = file_get_contents($config["data_dir"] . "/content/disclaimer.html");
