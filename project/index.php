@@ -129,8 +129,8 @@ if ($isPromo) {
     if (!empty($matchedBranch['title'])) {
       $data['title'] = $matchedBranch['title'];
     }
-    if (!empty($matchedBranch['description:'])) {
-      $data['description'] = $matchedBranch['description:'];
+    if (!empty($matchedBranch['description'])) {
+      $data['description'] = $matchedBranch['description'];
     }
     if (!empty($matchedBranch['emailRecipients'])) {
       $data['emailRecipients'] = $matchedBranch['emailRecipients'];

@@ -1,2 +1,10 @@
 User-agent: *
-Disallow: /
+Disallow: /form.php
+Disallow: /turbo-form.php
+Disallow: /copy.php
+Disallow: /read-json.php
+Disallow: /json.php
+Disallow: /logs/
+
+Host: avtofin.org
+Sitemap: https://avtofin.org/sitemap.xml
